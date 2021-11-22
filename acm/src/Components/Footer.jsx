@@ -50,8 +50,9 @@ function Footer() {
                   
                   
                     <SocialIcon network="google"  className="social"  href="mailto:acmgiki19@gmail.com" target="_blank" rel="noopener noreferrer" />
-                  <SocialIcon network="instagram" className="social"href="mailto:acmgiki19@gmail.com" target="_blank" rel="noopener noreferrer"/>
-                
+                  <a href="https://www.instagram.com/acmgikichapter/" target="_blank" rel="noopener noreferrer">
+                <SocialIcon network="instagram" className="social"  />
+                </a>
                   
               </div>
             </div>

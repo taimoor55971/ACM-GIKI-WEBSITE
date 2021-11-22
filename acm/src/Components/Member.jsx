@@ -1,5 +1,5 @@
 import React from 'react'
-import {di, GS,SA, VP,P, ECS, ECI, Tresurer, DT, DS, DL, head1, head2, head3, head4, head5, head6, head7, head8} from "./Images"
+import {di, GS,SA, VP,P, ECS, ECI, Tresurer, DT, DS, DL, head1, head2, head3, head4, head5, head6, head7, head8, DP} from "./Images"
 import Team from './Team'
 import "../Assets/css/team.css"
 import { Helmet } from 'react-helmet'
@@ -14,13 +14,13 @@ function Member() {
          <Helmet >
           <meta charSet="utf-8" />
           <title>ACM_GIKI Chapter | OUR Team</title>
-          <meta name="description" content=" ACM GIKI TEAM "/>
+          <meta name="description" content=" ACM GIKI TEAM " />
+           <meta name="viewport" content="width=device-width,  initial-scale=1.0 ,user-scalable=no"></meta>
 
         </Helmet>
          
   <div>
-        <br /><br /><br />
-        <br />
+       
         <div className="container">
           <h2>OUR TEAM</h2>
           <br />
@@ -59,7 +59,8 @@ function Member() {
                 <div className="row justify-content-md-center"  id="mem-row">
                   <Team image={DT}/>
                   <Team image={DS}/>
-                 <Team image={DL}/>
+                    <Team image={DL} />
+                    <Team image={DP}/>
                 </div>
               </div>
             </div>
@@ -69,14 +70,14 @@ function Member() {
                 <div className="row justify-content-md-center" style={{height: '100%',width:"100%"}} id="mem-row">
                   
                  <Team image={head1}/>
-                  
                   <Team image={head2}/>
                   <Team image={head3}/>
-                  <Team image={head4} />
+                  
+                  {/* <Team image={head4} />
                   <Team image={head5} />
                   <Team image={head6}/>
                   <Team image={head7} />
-                  <Team image={head8} />
+                  <Team image={head8} /> */}
                   </div>
                   
               </div>
