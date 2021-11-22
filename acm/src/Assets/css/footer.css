@@ -1,0 +1,13 @@
+.social{
+    color: #3b5998!important;
+    margin-right: 10% !important ;
+    height: 15%!important;
+    width: 15%!important;
+    transition: transform .2s!important;
+    /* Animation */
+}
+
+.social:hover{
+    z-index: 10  !important;
+    transform: scale(1.5)!important;
+}
