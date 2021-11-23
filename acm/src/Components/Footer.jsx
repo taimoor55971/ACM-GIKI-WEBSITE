@@ -62,7 +62,7 @@ function Footer() {
                 <p style={{fontSize: '15px !important', fontFamily: '"Roboto", sans-serif !important'}} className="lead4">
                   Copyright © <span className="date">2019</span> All rights
                   reserved | Website by
-                  <a id="ATT" href="https://www.linkedin.com/in/saif-ur-rehman-0a6a23199/"rel="noreferrer" target="_blank">ACM TECH TEAM</a>
+                  <a id="ATT" href="https://www.linkedin.com/in/taimoor-khan-96b19b190/"rel="noreferrer" target="_blank">ACM TECH TEAM</a>
                 </p>
               </div>
             </div>
