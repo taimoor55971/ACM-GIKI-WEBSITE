@@ -48,19 +48,23 @@ function Member() {
               <br />
               <div className="container">
                 <div className="row justify-content-md-center" id="mem-row">
-                  <Team image={ECI}/>
-                  <Team image={VP}/>
-                  <Team image={ECS}/>
+                  
+                     <Team image={ECS}/>
+                    <Team image={VP} />
+                    <Team image={GS} />
+                    <Team image={ECI} />
+                 
                 </div>
                 <div className="row row-md-2" style={{margin:"20px 10% "}} id="mem-row">
-                  <Team image={GS}/>
-                 <Team image={Tresurer}/>
+                  
+                 <Team image={DL} />
+                    <Team image={DP}/>
                 </div>
                 <div className="row justify-content-md-center"  id="mem-row">
-                  <Team image={DT}/>
+                  <Team image={Tresurer} />
+                    <Team image={DT} />
                   <Team image={DS}/>
-                    <Team image={DL} />
-                    <Team image={DP}/>
+                    
                 </div>
               </div>
             </div>
