@@ -1,5 +1,9 @@
 import React from 'react'
-import {di, GS,SA, VP,P, ECS, ECI, Tresurer, DT, DS, DL, head1, head2, head3, head4, head5, head6, head7, head8, DP} from "./Images"
+import {
+  di, GS, SA, VP, P, ECS, ECI, Tresurer, DT, DS, DL, head1, head2, head3,
+  // head4, head5, head6, head7, head8,
+  DP
+} from "./Images"
 import Team from './Team'
 import "../Assets/css/team.css"
 import { Helmet } from 'react-helmet'
