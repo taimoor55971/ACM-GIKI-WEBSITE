@@ -59,9 +59,9 @@ const request = mailjet
      <h3>Dear ${Name}!</h3> 
      You have successfuly registered as a ambasssador for  Softcom.
               For Details Contact:
-                      Liaison Head: Hamza Afzal (03009107323)
-                      Liaison Head: Rohan Saeed (03340196962)
-                      System Administrator: Saif Hashmi (03015593308)
+                       Liaison Head: Awais Sajjad (0331-3153332)
+                      Liaison Head: Obail Tariq (0333-4424450)
+                      System Administrator: Muhammad Taimoor Khan (0332-2236519)
               Regards:
               ACM Giki Chapter
     </pre> `
@@ -117,12 +117,12 @@ router.post("/registerps", (req, res) => {
         }
       ],
       "Subject": "Participant Registration Confirmation for  Softcom",
-      "HTMLPart": `<h3>Dear ${Name}!</h3> 
+      "HTMLPart": `
   <pre>
-     <h3>Dear ${Name}!</h3> <br/>
+     <h3>Dear ${Name}!</h3> 
      You have successfuly registered as a participant for 20th Softcom.
               For Details Contact:
-                      Liaison Head: Awais Watto (0331-3153332)
+                      Liaison Head: Awais Sajjad (0331-3153332)
                       Liaison Head: Obail Tariq (0333-4424450)
                       System Administrator: Muhammad Taimoor Khan (0332-2236519)
               Regards:
@@ -172,14 +172,14 @@ router.post("/registerpi", (req, res) => {
         }
       ],
       "Subject": "Participant Registration Confirmation for ICPC",
-      "TextPart": "My first Mailjet email",
+      // "TextPart": "My first Mailjet email",
       "HTMLPart": `<pre>
      <h3>Dear ${NameL}!</h3> <br/>
-     You have successfuly registered as a participant for ICPC.
-              For Details Contact:
-                      Liaison Head: Hamza Afzal (03009107323)
-                      Liaison Head: Rohan Saeed (03340196962)
-                      System Administrator: Saif Hashmi (03015593308)
+     Your Team have successfuly registered as a participant for ICPC.
+                For Details Contact:
+                      Liaison Head: Awais Sajjad (0331-3153332)
+                      Liaison Head: Obail Tariq (0333-4424450)
+                      System Administrator: Muhammad Taimoor Khan (0332-2236519)
               Regards:
               ACM Giki Chapter
     </pre> `

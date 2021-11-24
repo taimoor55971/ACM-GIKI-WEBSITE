@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import "../Assets/css/softcom.css"
+import { hack, icpc, posterDes, quiz, softcom, startup } from './Images'
 
 function Softcom() {
     return (
@@ -11,7 +12,7 @@ function Softcom() {
           <meta name="description" content="SOFTCOM is an All Pakistan Software, Multimedia, Quiz and Speed Programming Competition. GIKI held its first SOFTCOM in the year 2000 and since then has been holding this event regularly every year. This major event that is organized by ACM is held at the GIKI campus and the ACM student body is assisted by the GIKI administration to make this event a huge success. This gathering of over 300 intelligent and motivated engineering students has always been the source of giving birth to innovative ideas, immaculate solutions and immense sense of positive competition. In 3 days filled with fun, enjoyment, thrill and competition, students have an experience of life-time that is worth remembering for them." />
         </Helmet>
              <div className="card">
-          <img src="Assets/img/softcom/cover2.jpg" className="card-img-top" alt="..." />
+          <img src={softcom}className="card-img-top" alt="..." />
         </div>
         <div className="head"><h2>ABOUT SOFTCOM</h2><div className="container"><p>SOFTCOM is an All Pakistan Software, Multimedia, Quiz and Speed Programming Competition. 
               GIKI held its first SOFTCOM in the year 2000 and since then has been holding this event regularly every year. 
@@ -34,7 +35,7 @@ function Softcom() {
               </p>  
             </div>
             <div id="col_img" className="col-lg-6">
-              <img id="about_images" src="Assets/img/softcom/hack.JPG" alt="" /> 
+              <img id="about_images" src={hack}alt="" /> 
             </div>
           </div>
           <br /><hr /><br />
@@ -47,7 +48,7 @@ function Softcom() {
               </p>  
             </div>
             <div id="col_img" className="col-lg-6">
-              <img id="about_images" src="Assets/img/softcom/icpc.jpg" alt="" /> 
+              <img id="about_images" src={icpc} alt="" />
             </div>
           </div>
           <br /><hr /><br />
@@ -60,7 +61,7 @@ function Softcom() {
                 about.</p>  
             </div>
             <div id="col_img" className="col-lg-6">
-              <img id="about_images" src="Assets/img/softcom/poster.jpg" alt="" /> 
+              <img id="about_images" src={posterDes} alt="" /> 
             </div>
           </div>
           <br /><hr /><br />
@@ -71,7 +72,7 @@ function Softcom() {
                 The competition is going to be based on General Knowledge; the set of questions will be related to the general academic curriculum of computer science, general sciences and engineering students, to make it more practicable for participants.</p>  
             </div>
             <div id="col_img" className="col-lg-6">
-              <img id="about_images" src="Assets/img/softcom/quiz.jpg" alt="" /> 
+              <img id="about_images" src={quiz} alt="" /> 
             </div>
           </div>
           <br /><hr /><br />
@@ -86,7 +87,7 @@ function Softcom() {
                 to support, nurture, and fund early stage startups.</p>  
             </div>
             <div id="col_img" className="col-lg-6">
-              <img id="about_images" src="Assets/img/softcom/startup.jpg" alt="" /> 
+              <img id="about_images" src={startup} alt="" /> 
             </div>
           </div>
         </div>

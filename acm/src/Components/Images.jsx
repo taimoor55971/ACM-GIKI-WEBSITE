@@ -23,7 +23,7 @@ import genlTeam from "../Assets/img/sponsor/genl.jpg"
 import logo2 from "../Assets/img/logos/logo-main2.png"
 import pseb from "../Assets/img/sponsor/pseb.jpg"
 
-//TEAM 27
+//TEAM 28
 import di from "../Assets/img/27/MASROOR.jpg"
 import P from "../Assets/img/28/President.jpg"
 import SA from "../Assets/img/28/Dr. Raja Hashim.jpg"
@@ -36,7 +36,7 @@ import DS from "../Assets/img/28/DS.jpg"
 import DP from "../Assets/img/28/DP.jpg"
 import DL from "../Assets/img/28/DL.jpg"
 import DT from "../Assets/img/28/DT.jpg"
-// TEAM 28
+// TEAM 29
 import head1 from "../Assets/img/29/HT1.jpg"
 import head2 from "../Assets/img/29/HSM.jpg"
 import head3 from "../Assets/img/29/HP.jpg"
@@ -53,6 +53,14 @@ import Ticket from "../asset/img/bg/tickets.jpg"
 import background from "../asset/img/icpc_bg.png"
 import LiasonPackage from "./ICPC_Sponsorship_Package.pdf"
 import acmlogonav from "../Assets/img/logos/logo-main2.png"
+//softcom
+import softcom from "../Assets/img/softcom/cover2.jpg"
+import hack from "../Assets/img/softcom/hack.JPG"
+import quiz from "../Assets/img/softcom/quiz.jpg"
+import startup from "../Assets/img/softcom/startup.jpg"
+import posterDes from "../Assets/img/softcom/poster.jpg"
+import icpc from "../Assets/img/softcom/icpc.jpg"
+
 
 export {
     C1, C2, C3,C4, lptp, tag, mic, poster, social, granna, ibm, hum, toyota, Dost, uworlx, topcity, sapien, microsoft,
@@ -62,6 +70,6 @@ export {
     // image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18,
     // image19, image20, image21, image22, image23, image24, image25, image26, image27, image28, image29, image30, image31, image32, image33, image34, image35, image36, image37, image38,
     // image39, image40, image41, image42,image43, image44, image45, image46, image47, image48, image49, image50, image51, image52, image53, image54, image55, image56,
-    Logo, Account, Ticket, background,LiasonPackage
+    Logo, Account, Ticket, background,LiasonPackage,softcom,hack,quiz,startup,posterDes,icpc
     
 };

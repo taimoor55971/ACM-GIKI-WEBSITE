@@ -32,7 +32,7 @@ function Member() {
             <div className="nav" id="nav-tab" role="tablist">
               <a className="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-EC" role="tab" aria-controls="nav-EC" aria-selected="true">EXECUTIVE COUNCIL</a>
               <a className="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-H" role="tab" aria-controls="nav-H" aria-selected="false">HEADS</a>
-              <a className="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-M" role="tab" aria-controls="nav-M" aria-selected="false">SUBHEADS</a>
+              <a className="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-SH" role="tab" aria-controls="nav-M" aria-selected="false">SUBHEADS</a>
             <a className="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-M" role="tab" aria-controls="nav-M" aria-selected="false">MEMBERS</a>
               </div>
           </navbar>
@@ -74,7 +74,7 @@ function Member() {
             </div>
             <div className="tab-pane fade" id="nav-H" role="tabpanel" aria-labelledby="nav-profile-tab">
               <div className="container">
-                <h2 style={{textAlign: 'center'}}>BATCH 28</h2>
+                <h2 style={{textAlign: 'center'}}>BATCH 29</h2>
                 <div className="row justify-content-md-center" style={{height: '100%',width:"100%"}} id="mem-row">
                   
                  <Team image={head1}/>
@@ -90,15 +90,26 @@ function Member() {
                   
               </div>
             </div>
-            <div className="tab-pane fade" id="nav-M" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div className="tab-pane fade" id="nav-SH" role="tabpanel" aria-labelledby="nav-contact-tab">
               <div className="container">
-                <h2 style={{textAlign: 'center'}}>BATCH 29</h2>
+                <h2 style={{textAlign: 'center'}}>BATCH 30</h2>
+                <div className="row justify-content-md-center" id="mem-row">
+                  
+                 
+                </div>
+              </div>
+              </div>
+              
+              <div className="tab-pane fade" id="nav-M" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div className="container">
+                <h2 style={{textAlign: 'center'}}>BATCH 31</h2>
                 <div className="row justify-content-md-center" id="mem-row">
                   
                  
                 </div>
               </div>
             </div>
+
           </div>
         </div>
         <br /><br />

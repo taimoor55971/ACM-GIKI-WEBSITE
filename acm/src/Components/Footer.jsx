@@ -45,14 +45,15 @@ function Footer() {
                 
                    
                 
-                  <a href="https://www.facebook.com/ACMGIKI" target="_blank" rel="noopener noreferrer"><SocialIcon network="facebook" className="social" /></a>
+                  <SocialIcon network="facebook" className="social" url="https://www.facebook.com/ACMGIKI" target="_blank" rel="noopener noreferrer" />
                     
                   
+                
+                    <SocialIcon network="linkedin"  className="social"  url="https://www.linkedin.com/company/acm-student-giki-chapter/mycompany/?viewAsMember=true" target="_blank" rel="noopener noreferrer" />
                   
-                    <SocialIcon network="google"  className="social"  href="mailto:acmgiki19@gmail.com" target="_blank" rel="noopener noreferrer" />
-                  <a href="https://www.instagram.com/acmgikichapter/" target="_blank" rel="noopener noreferrer">
-                <SocialIcon network="instagram" className="social"  />
-                </a>
+                  
+                <SocialIcon network="instagram" className="social" url="https://www.instagram.com/acm.giki/" target="_blank" rel="noopener noreferrer"  />
+                
                   
               </div>
             </div>
@@ -60,9 +61,9 @@ function Footer() {
             <div className="row justify-content-center">
               <div className="col-12 col-lg-6">
                 <p style={{fontSize: '15px !important', fontFamily: '"Roboto", sans-serif !important'}} className="lead4">
-                  Copyright © <span className="date">2019</span> All rights
+                  Copyright © <span className="date">2021</span> All rights
                   reserved | Website by
-                  <a id="ATT" href="https://www.linkedin.com/in/taimoor-khan-96b19b190/"rel="noreferrer" target="_blank">ACM TECH TEAM</a>
+                  {/* <a id="ATT" href="https://www.linkedin.com/in/taimoor-khan-96b19b190/"rel="noreferrer" target="_blank">ACM TECH TEAM</a> */}
                 </p>
               </div>
             </div>
