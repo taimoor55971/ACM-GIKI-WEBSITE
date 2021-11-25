@@ -28,7 +28,7 @@ function Home() {
           <meta name="description" content="ACM is a world wide professional organization devoted to advancing the theory and practice of computer science. Its student chapter at GIK is involved in activities ranging from arranging students workshops, special courses and introductory seminars to holding software and computer games competitions. "/>
 
         </Helmet>
-        <LazyLoad >
+        
         <Carousel  infiniteLoop autoplay interval={2000} showThumbs={false} showIndicators={false} showStatus={false}>
                     <div style={{marginTop:"5%", width: '100%'}}  >
                     <img src={C4}  alt="" />
@@ -47,7 +47,7 @@ function Home() {
                     
                 </div>
             </Carousel>
-            </LazyLoad>
+            
         <br />
         
         <div data-aos="zoom-in" className="container">
