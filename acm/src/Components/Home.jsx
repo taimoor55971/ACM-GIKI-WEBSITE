@@ -17,7 +17,7 @@ import Sponsor from "./Sponsor"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { Helmet } from 'react-helmet';
-import LazyLoad from 'react-lazyload';
+
 function Home() {
 
     return (

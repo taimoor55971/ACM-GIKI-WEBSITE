@@ -20,7 +20,7 @@ function Member() {
           <title>ACM_GIKI Chapter | OUR Team</title>
           <meta name="description" content=" ACM GIKI TEAM " />
            <meta name="viewport" content="width=device-width,  initial-scale=1.0 ,user-scalable=no"></meta>
-
+          <meta property="og:image" content={GS} />
         </Helmet>
          
   <div>
@@ -42,7 +42,7 @@ function Member() {
               <div className="container">
                 <h2 style={{textAlign:"center"}}>EXECUTIVE COUNCIL</h2>
                 <div className="row justify-content-md-center" id="mem-row">
-                  <Team image={di}/>
+                  <Team image={di}  />
                     <Team image={P} />
                      <Team image={SA} />
                     
