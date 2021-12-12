@@ -2,6 +2,7 @@ import React from 'react'
 import "../Assets/css/App.css"
 import "../Assets/css/sponsor.css"
 import { Link } from "react-router-dom"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'aos/dist/aos.css';
 import {
   C1, C2, C3,C4,
@@ -31,19 +32,19 @@ function Home() {
         
         <Carousel  infiniteLoop autoplay interval={2000} showThumbs={false} showIndicators={false} showStatus={false}>
                     <div style={{marginTop:"5%", width: '100%'}}  >
-                    <img src={C4}  alt="" />
+                     <LazyLoadImage  src={C4}/>
                    
                    </div>      
                    <div>
-                    <img src={C1} alt="" />
+                    <LazyLoadImage  src={C1}/>
                    
                 </div>
                 <div>
-                    <img src={C2} alt=""/>
+                    <LazyLoadImage  src={C2}/>
                   
                 </div>
                 <div>
-                    <img src={C3} alt="" />
+                    <LazyLoadImage  src={C3}/>
                     
                 </div>
             </Carousel>
