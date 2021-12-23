@@ -31,7 +31,7 @@ function Home() {
         </Helmet>
         
         <Carousel  infiniteLoop autoplay interval={2000} showThumbs={false} showIndicators={false} showStatus={false}>
-                    <div style={{marginTop:"5%", width: '100%'}}  >
+                    {/* <div style={{marginTop:"5%", width: '100%'}}  > */}
                      {/* <LazyLoadImage  src={C4}/>
                    
                    </div>       */}
