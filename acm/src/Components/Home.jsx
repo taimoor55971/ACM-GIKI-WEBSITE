@@ -155,7 +155,7 @@ function Home() {
           <br />
           <div style={{border: 'none !important'}} className="card">
             
-            <LazyLoadImage   src={social} className="card-img-top" alt="..." />
+            <img   src={social} className="card-img-top" alt="..." />
           </div>
         </div>
         <br /><br /><br />
