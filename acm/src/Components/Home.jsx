@@ -32,9 +32,9 @@ function Home() {
         
         <Carousel  infiniteLoop autoplay interval={2000} showThumbs={false} showIndicators={false} showStatus={false}>
                     <div style={{marginTop:"5%", width: '100%'}}  >
-                     <LazyLoadImage  src={C4}/>
+                     {/* <LazyLoadImage  src={C4}/>
                    
-                   </div>      
+                   </div>       */}
                    <div>
                     <LazyLoadImage  src={C1}/>
                    
@@ -154,7 +154,8 @@ function Home() {
           <h2>SOCIAL EVENTS</h2>
           <br />
           <div style={{border: 'none !important'}} className="card">
-            <img src={social} className="card-img-top" alt="..." />
+            
+            <LazyLoadImage   src={social} className="card-img-top" alt="..." />
           </div>
         </div>
         <br /><br /><br />
