@@ -36,15 +36,15 @@ function Home() {
                    
                    </div>       */}
                    <div>
-                    <LazyLoadImage  src={C1}/>
+                    <img  src={C1}/>
                    
                 </div>
                 <div>
-                    <LazyLoadImage  src={C2}/>
+                    <img  src={C2}/>
                   
                 </div>
                 <div>
-                    <LazyLoadImage  src={C3}/>
+                    <img  src={C3}/>
                     
                 </div>
             </Carousel>
