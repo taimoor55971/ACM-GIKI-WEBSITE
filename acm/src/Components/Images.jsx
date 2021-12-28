@@ -1,7 +1,8 @@
 import C1 from "../Assets/img/index/carousel1.jpg"
 import C2 from "../Assets/img/index/carousel2.jpg"
 import C3 from "../Assets/img/index/carousel3.jpg"
-import C4 from "../Assets/img/index/Selected_Volunteer_Poster-2.jpg"
+import C4 from "../Assets/img/index/Volunteer.jpg"
+import C5 from "../Assets/img/index/Poster_workshop.jpg"
 import lptp from "../Assets/img/index/lptp.png"
 import tag from "../Assets/img/index/tag.png"
 import mic from "../Assets/img/index/mic.png"
@@ -63,7 +64,7 @@ import icpc from "../Assets/img/softcom/icpc.jpg"
 
 
 export {
-    C1, C2, C3,C4, lptp, tag, mic, poster, social, granna, ibm, hum, toyota, Dost, uworlx, topcity, sapien, microsoft,
+    C1, C2, C3,C4,C5, lptp, tag, mic, poster, social, granna, ibm, hum, toyota, Dost, uworlx, topcity, sapien, microsoft,
     kualitatem,virtualforce,genlTeam,logo2,pseb,di,acmlogonav,
     P,SA, VP, ECS, ECI, GS, DS, DP, DL, DT, Tresurer, head1, head2, head3, head4, head5, head6, head7, head8,
     // image1, image2, image3,
