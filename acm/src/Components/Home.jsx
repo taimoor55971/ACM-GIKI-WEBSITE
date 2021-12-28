@@ -40,7 +40,7 @@ function Home() {
                    
           
            <div>
-                    <img  src={C4} width="20%" height="650" alt=""/>
+                    <img  src={C4}  alt=""/>
                    
                 </div>
                    <div>
