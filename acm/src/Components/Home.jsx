@@ -44,15 +44,15 @@ function Home() {
                    
                 </div>
                    <div>
-                    <img  src={C1} width="100%" height="100%" alt=""/>
+                    <img  src={C1} />
                    
                 </div>
                 <div>
-                    <img  src={C2} width="100%" height="100%" alt=""/>
+                    <img  src={C2}/>
                   
                 </div>
                 <div>
-                    <img  src={C3}width="100%" height="100%" alt=""/>
+                    <img  src={C3}/>
                     
                 </div>
             </Carousel>
