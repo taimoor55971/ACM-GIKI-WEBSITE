@@ -6,7 +6,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'aos/dist/aos.css';
 import {
   C1, C2, C3,C4,
-  Dost, genlTeam, granna, hum, ibm, kualitatem, lptp, mic, poster, social, tag, topcity, toyota, uworlx, microsoft, virtualforce, pseb,LiasonPackage
+  Dost, genlTeam, granna, hum, ibm, kualitatem, lptp, mic, poster, social, tag, topcity, toyota, uworlx, microsoft, virtualforce, pseb,LiasonPackage, C5
 } from "./Images"
 import OwlCarousel from "react-owl-carousel";
 
@@ -30,21 +30,29 @@ function Home() {
 
         </Helmet>
         
-        <Carousel  infiniteLoop autoplay interval={2000} showThumbs={false} showIndicators={false} showStatus={false}>
+        <Carousel  infiniteLoop autoplay interval={2000} showThumbs={false} showIndicators={false} showStatus={1} >
                     {/* <div style={{marginTop:"5%", width: '100%'}}  > */}
                      {/* <LazyLoadImage  src={C4}/>
                    
                    </div>       */}
+            {/* <div style={{marginTop:"5%",width: '100%', height: '10'}}  > */}
+                    <img  src={C5}  alt=""/>
+                   
+          
+           <div>
+                    <img  src={C4} width="20%" height="650" alt=""/>
+                   
+                </div>
                    <div>
-                    <img  src={C1}/>
+                    <img  src={C1} width="100%" height="100%" alt=""/>
                    
                 </div>
                 <div>
-                    <img  src={C2}/>
+                    <img  src={C2} width="100%" height="100%" alt=""/>
                   
                 </div>
                 <div>
-                    <img  src={C3}/>
+                    <img  src={C3}width="100%" height="100%" alt=""/>
                     
                 </div>
             </Carousel>
