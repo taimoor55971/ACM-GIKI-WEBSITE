@@ -2,7 +2,7 @@ import React from 'react'
 import "../Assets/css/App.css"
 import "../Assets/css/sponsor.css"
 import { Link } from "react-router-dom"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import 'aos/dist/aos.css';
 import {
   C1, C2, C3,C4,
@@ -16,7 +16,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Sponsor from "./Sponsor"
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+
 import { Helmet } from 'react-helmet';
 
 function Home() {
@@ -61,14 +61,14 @@ function Home() {
             
         <br />
         
-        <div  className="container">
+        <div  className="container" data-aos="fade-in">
           <div className="row justify-content-md-center">
             <div className="col shadow col-lg-4" id="NAU">
               <div className="head">
                 <h4>NEWS AND UPDATES</h4>
               </div>
               <hr />
-              <ul className="news">
+              <ul className="news" >
               
                 <li>ICPC Asia Topi Regional Registration Ends on <span className="date">15 December 2020</span></li>
                 <li>ICPC Asia Topi Regional Online Contest on <span className="date">22-23 December 2020</span></li>
