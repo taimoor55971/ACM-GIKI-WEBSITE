@@ -30,7 +30,7 @@ function Home() {
 
         </Helmet>
         
-        <Carousel  infiniteLoop autoplay interval={2000} showThumbs={false} showIndicators={false} showStatus={1} >
+        <Carousel  infiniteLoop autoplay={true} interval={2000} showThumbs={false} showIndicators={false} showStatus={false} >
                     {/* <div style={{marginTop:"5%", width: '100%'}}  > */}
                      {/* <LazyLoadImage  src={C4}/>
                    
