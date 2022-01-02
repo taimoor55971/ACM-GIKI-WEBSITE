@@ -26,13 +26,18 @@
     <script src=".\asset\js\nav_animation.js"></script>
 
     <!--Onscroll Animations-->
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-    <script type="text/javascript">
-      setTimeout(function () { AOS.init(); }, 1000);
-          
-      });
+ <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset: 60, once: false , duration: 300,
+      initClassName: 'aos-init',
+      animatedClassName: 'aos-animate',
+      useClassNames: false,
+      disableMutationObserver: false,
+      debounceDelay: 50,
+      throttleDelay: 99,
+      }); 
+  </script>
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
