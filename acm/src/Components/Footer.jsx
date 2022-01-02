@@ -8,7 +8,7 @@ function Footer() {
 
     return (
         <div id="footer">
-             <div data-aos="fade-in" className="footer">
+             <div data-aos="fade-in" data-aos-duration="300" className="footer">
           <div className="container" >
             <div className="row justify-content-md-around" id="ftr-row">
               <div className="col-12 col-lg-3">

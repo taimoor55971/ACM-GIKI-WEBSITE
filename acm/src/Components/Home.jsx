@@ -61,7 +61,7 @@ function Home() {
             
         <br />
         
-        <div  className="container">
+        <div data-aos="zoom-in" data-aos-duration="300" className="container">
           <div className="row justify-content-md-center">
             <div className="col shadow col-lg-4" id="NAU">
               <div className="head">
@@ -76,7 +76,7 @@ function Home() {
               </ul>
             </div>
             <div className="space1" />
-            <div className="col shadow overflow-auto col-lg-6 Upcom" data-aos="zoom-in-right" id="NAU upcom">
+            <div className="col shadow overflow-auto col-lg-6 Upcom" data-aos="zoom-in-right" data-aos-duration="300"  id="NAU upcom">
               <div className="head ">
                 <h4>ABOUT THE UPCOMING EVENT</h4>
               </div>
@@ -97,7 +97,7 @@ function Home() {
         </div>
         
         <br /><br /><br />
-        <div data-aos="zoom-in" className="container module-header">
+        <div data-aos="zoom-in" data-aos-duration="300" className="container module-header">
           <h2>MODULES</h2>
           <br />
           <div className="row">
@@ -160,7 +160,7 @@ function Home() {
           </div>
         </div>
         <br /><br /><br />
-        <div data-aos="zoom-in" className="container">
+        <div data-aos="zoom-in" data-aos-duration="300" className="container">
           <h2>SOCIAL EVENTS</h2>
           <br />
           <div style={{border: 'none !important'}} className="card">
@@ -169,7 +169,7 @@ function Home() {
           </div>
         </div>
         <br /><br /><br />
-        <div data-aos="zoom-in" className="container">
+        <div data-aos="zoom-in" data-aos-duration="300" className="container">
           <h2>SPONSORSHIP PACKAGE</h2>
           <br />
           <div className="row">
@@ -244,7 +244,7 @@ function Home() {
 <h2 className="container module-header" style={{paddingBottom:"20px"}}>Our Sponsors</h2>
         
         <br /><br />
-        <div data-aos="zoom-in"className="container">
+        <div data-aos="zoom-in" data-aos-duration="300" className="container">
         <OwlCarousel  className="owl-theme"  items={3.75} loop autoplay={1} autoplayTimeout={1500} autoplayHoverPause={0} dots={0} >
           
           <Sponsor image={hum} />

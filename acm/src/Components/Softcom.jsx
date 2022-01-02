@@ -22,7 +22,7 @@ function Softcom() {
         <div className="container"><hr /></div>
         <br /><br />
         <div className="container">
-          <div data-aos="fade-in" className="row justify-content-center" id="hackathon">
+          <div data-aos="fade-in" data-aos-duration="300" className="row justify-content-center" id="hackathon">
             <div className="col-lg-6 shadow">
               <h4>HACKATHON</h4>
               <p className="lead1">
@@ -39,7 +39,7 @@ function Softcom() {
             </div>
           </div>
           <br /><hr /><br />
-          <div data-aos="fade-in" className="row justify-content-center" id="icpc">
+          <div data-aos="fade-in" data-aos-duration="300" className="row justify-content-center" id="icpc">
             <div className="col-lg-6 shadow">
               <h4>ICPC</h4>
               <p className="lead1">
@@ -52,7 +52,7 @@ function Softcom() {
             </div>
           </div>
           <br /><hr /><br />
-          <div data-aos="fade-in" className="row justify-content-center" id="poster">
+          <div data-aos="fade-in" data-aos-duration="300" className="row justify-content-center" id="poster">
             <div className="col-lg-6 shadow">
               <h4>POSTER DESIGN</h4>
               <p className="lead1">Creativity can’t be possessed by studying or by some other resources, it is something you are naturally born with and often this
@@ -65,7 +65,7 @@ function Softcom() {
             </div>
           </div>
           <br /><hr /><br />
-          <div data-aos="fade-in" className="row justify-content-center" id="quiz">
+          <div data-aos="fade-in" data-aos-duration="300" className="row justify-content-center" id="quiz">
             <div className="col-lg-6 shadow">
               <h4>QUIZ COMPETITION</h4>
               <p className="lead1">Quizzes have always been a major source of analyzing ones talent in one’s profession, thus making an inclusion of a mega quiz, a vital part of annual ritual of ACM. Let your intellect shine, let the rolling of brain race with every passing of minute. ACM GIKI is coming up with a distinctive quiz competition for undergraduate students. 
@@ -76,7 +76,7 @@ function Softcom() {
             </div>
           </div>
           <br /><hr /><br />
-          <div data-aos="fade-in" className="row justify-content-center" id="startup">
+          <div data-aos="fade-in" data-aos-duration="300" className="row justify-content-center" id="startup">
             <div className="col-lg-6 shadow">
               <h4>STARTUP COMPETITION</h4>
               <p className="lead1"> Startup Competition, the trial by fire opportunity that could turn your dream into reality. It is a startup accelerator for 
