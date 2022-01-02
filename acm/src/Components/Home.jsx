@@ -245,7 +245,7 @@ function Home() {
         
         <br /><br />
         <div className="container">
-        <OwlCarousel  className="owl-theme"  items={3.75} loop autoplay={1} autoplayTimeout={1500} autoplayHoverPause={0} dots={0} >
+        <OwlCarousel  className="owl-theme" lazyLoad={1}  items={3.75} loop autoplay={1} autoplayTimeout={1500} autoplayHoverPause={0} dots={0} >
           
           <Sponsor image={hum} />
           <Sponsor image={ibm} />
