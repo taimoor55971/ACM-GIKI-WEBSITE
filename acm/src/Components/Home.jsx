@@ -76,7 +76,7 @@ function Home() {
               </ul>
             </div>
             <div className="space1" />
-            <div className="col shadow overflow-auto col-lg-6 Upcom" data-aos="zoom-in-right" id="NAU upcom">
+            <div className="col shadow overflow-auto col-lg-6 Upcom"  id="NAU upcom">
               <div className="head ">
                 <h4>ABOUT THE UPCOMING EVENT</h4>
               </div>
