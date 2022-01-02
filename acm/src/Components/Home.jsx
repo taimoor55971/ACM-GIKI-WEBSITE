@@ -61,7 +61,7 @@ function Home() {
             
         <br />
         
-        <div  className="container" data-aos="fade-in">
+        <div  className="container" >
           <div className="row justify-content-md-center">
             <div className="col shadow col-lg-4" id="NAU">
               <div className="head">
