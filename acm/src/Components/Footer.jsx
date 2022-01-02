@@ -8,7 +8,7 @@ function Footer() {
 
     return (
         <div id="footer">
-             <div  className="footer">
+             <div  className="footer ">
           <div className="container" >
             <div className="row justify-content-md-around" id="ftr-row">
               <div className="col-12 col-lg-3">
