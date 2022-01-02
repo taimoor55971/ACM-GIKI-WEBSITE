@@ -7,7 +7,7 @@ import { SocialIcon } from 'react-social-icons';
 function Footer() {
 
     return (
-        <div id="footer">
+        <div id="footer" data-aos="zoom-in">
              <div  className="footer">
           <div className="container" >
             <div className="row justify-content-md-around" id="ftr-row">

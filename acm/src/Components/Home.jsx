@@ -61,14 +61,14 @@ function Home() {
             
         <br />
         
-        <div  className="container" data-aos="fade-in">
+        <div  className="container" data-aos="zoom-in">
           <div className="row justify-content-md-center">
             <div className="col shadow col-lg-4" id="NAU">
               <div className="head">
                 <h4>NEWS AND UPDATES</h4>
               </div>
               <hr />
-              <ul className="news" data-aos="fade-in" >
+              <ul className="news" data-aos="zoom-in" >
               
                 <li>ICPC Asia Topi Regional Registration Ends on <span className="date">15 December 2020</span></li>
                 <li>ICPC Asia Topi Regional Online Contest on <span className="date">22-23 December 2020</span></li>
@@ -76,7 +76,7 @@ function Home() {
               </ul>
             </div>
             <div className="space1" />
-            <div className="col shadow overflow-auto col-lg-6 Upcom"  id="NAU upcom">
+            <div className="col shadow overflow-auto col-lg-6 Upcom" data-aos="zoom-in"  id="NAU upcom">
               <div className="head ">
                 <h4>ABOUT THE UPCOMING EVENT</h4>
               </div>
@@ -97,7 +97,7 @@ function Home() {
         </div>
         
         <br /><br /><br />
-        <div  className="container module-header">
+        <div  className="container module-header" data-aos="zoom-in">
           <h2>MODULES</h2>
           <br />
           <div className="row">
@@ -160,7 +160,7 @@ function Home() {
           </div>
         </div>
         <br /><br /><br />
-        <div  className="container">
+        <div  className="container" data-aos="zoom-in">
           <h2>SOCIAL EVENTS</h2>
           <br />
           <div style={{border: 'none !important'}} className="card">
@@ -169,7 +169,7 @@ function Home() {
           </div>
         </div>
         <br /><br /><br />
-        <div  className="container">
+        <div  className="container" data-aos="zoom-in" >
           <h2>SPONSORSHIP PACKAGE</h2>
           <br />
           <div className="row">
@@ -241,10 +241,11 @@ function Home() {
         </div>
         <br /><br /><br />
         {/*ACM Sponsors slick carousel*/}
+
 <h2 className="container module-header" style={{paddingBottom:"20px"}}>Our Sponsors</h2>
         
         <br /><br />
-        <div className="container">
+        <div className="container" data-aos="zoom-in" >
         <OwlCarousel  className="owl-theme" lazyLoad={1}  items={3.75} loop autoplay={1} autoplayTimeout={1500} autoplayHoverPause={0} dots={0} >
           
           <Sponsor image={hum} />
