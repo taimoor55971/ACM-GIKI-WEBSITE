@@ -67,12 +67,12 @@ function ICPC() {
               <div className="event_word">
                 <div className="row">
                   <div className="col-md-6 col-6">
-                    A preliminary Asia Topi Online Programming Contest will be held on 22-23 December, 2020, overall 200 teams are welcome to join this contest.
+                    A preliminary Asia Topi Online Programming Contest will be held on 25-26 January 2022, overall 200 teams are welcome to join this contest.
                     <br /> <br /><br />
                   </div>
                   <div className="col-md-6 col-6" style={{fontWeight: 700, textAlign: 'center'}}>
-                    Registration Deadline: 14 December, 2020 <br />
-                    Contest Dates: 22-23 December, 2020 <br />
+                    Registration Deadline: Closed <br />
+                    Contest Dates: 25-26 January, 2022 <br />
                     Fees per team (Foreign Students) : $30  <br />
                     Fees per team (Local Students) : Rs. 3000
                   </div>
