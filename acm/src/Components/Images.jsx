@@ -25,7 +25,7 @@ import logo2 from "../Assets/img/logos/logo-main2.png"
 import pseb from "../Assets/img/sponsor/pseb.jpg"
 
 //TEAM 28
-import di from "../Assets/img/27/MASROOR.jpg"
+import di from "../Assets/img/28/MASROOR.jpg"
 import P from "../Assets/img/28/President.jpg"
 import SA from "../Assets/img/28/Dr. Raja Hashim.jpg"
 import VP from "../Assets/img/28/VP.jpg"

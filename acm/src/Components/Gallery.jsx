@@ -143,7 +143,7 @@ function Gallery() {
        */}
         
       <div className="">
-      <button onClick={handleLoadMore} className="loadmore btn btn-danger  "  disabled={currentPage === pages[pages.length - 1] ? true : false}>
+      <button onClick={handleLoadMore} className="loadmore btn btn-danger d-flex justify-content-center  "   disabled={currentPage === pages[pages.length - 1] ? true : false}>
         Load More
         </button>
         </div>

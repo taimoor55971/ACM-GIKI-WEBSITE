@@ -7,12 +7,15 @@ import {
 import Team from './Team'
 import "../Assets/css/team.css"
 import { Helmet } from 'react-helmet'
+import T30 from "./T30"
+
 
 
 
 
 
 function Member() {
+
     return (
       <div id="member">
          <Helmet >
@@ -93,8 +96,9 @@ function Member() {
             <div className="tab-pane fade" id="nav-SH" role="tabpanel" aria-labelledby="nav-contact-tab">
               <div className="container">
                 <h2 style={{textAlign: 'center'}}>BATCH 30</h2>
-                <div className="row justify-content-md-center" id="mem-row">
-                  
+                  <div className="row justify-content-md-center" id="mem-row">
+                 
+                  <T30/>
                  
                 </div>
               </div>
