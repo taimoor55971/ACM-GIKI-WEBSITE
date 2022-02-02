@@ -1,12 +1,7 @@
-<<<<<<< HEAD
+
 /* eslint-disable no-unused-vars */
-=======
-<<<<<<< HEAD
 
-=======
 
->>>>>>> master
->>>>>>> t30
 import React, { useEffect, useState } from "react";
 import 'react-medium-image-zoom/dist/styles.css'
 import Zoom from 'react-medium-image-zoom'
