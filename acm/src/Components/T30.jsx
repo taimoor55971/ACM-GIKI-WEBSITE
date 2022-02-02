@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* eslint-disable no-unused-vars */
+=======
+/* eslint-disable no-unused-vars */
+>>>>>>> master
 import React, { useEffect, useState } from "react";
 import 'react-medium-image-zoom/dist/styles.css'
 import Zoom from 'react-medium-image-zoom'
