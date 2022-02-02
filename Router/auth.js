@@ -12,7 +12,8 @@ require("../db/conn");
 const Amb = require("../models/amb_Schema");
 const Ps = require("../models/psSchema");
 const Pi = require("../models/piSchema");
-const image=require("../models/imageSchema")
+const image = require("../models/imageSchema")
+const member=require("../models/members")
 
 // router.get("/", (req,res) => {
 //     res.send("Backend for maintainiance");
@@ -215,6 +216,27 @@ router.get("/images", async (req, res) => {
     const imgs = await image.find();
     
     res.send(imgs);
+  }catch(err) {console.log(err)}
+  
+  
+})
+
+router.post("/members",(req,res) => {
+
+  // console.log(req.body);
+  const mem = new member(req.body);
+  mem.save().then(() => {
+    res.send(mem);
+  }).catch((err) => {console.log(err)})
+})
+
+
+router.get("/members", async (req, res) => {
+ 
+  try {
+    const mem = await member.find();
+    
+    res.send(mem);
   }catch(err) {console.log(err)}
   
   
