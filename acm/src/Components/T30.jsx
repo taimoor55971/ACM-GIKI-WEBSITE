@@ -40,7 +40,7 @@ const renderData = (items, e) => {
   );
 };
 
-function Gallery() {
+function T30({API}) {
   const [data, setData] = useState([]);
 
   const [currentPage, ] = useState(1);
@@ -51,10 +51,10 @@ function Gallery() {
 
   // eslint-disable-next-line no-unused-vars
   useEffect(() => {
-    fetch("/members")
+    fetch(API)
       .then((response) => response.json())
       .then((json) => setData(json));
-  }, []);
+  }, [API]);
 
   return (
     <>
@@ -68,4 +68,4 @@ function Gallery() {
   );
 }
 
-export default Gallery;
+export default T30;

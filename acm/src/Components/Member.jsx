@@ -98,7 +98,7 @@ function Member() {
                 <h2 style={{textAlign: 'center'}}>BATCH 30</h2>
                   <div className="row justify-content-md-center" id="mem-row">
                  
-                  <T30/>
+                    <T30 API={"/members"}/>
                  
                 </div>
               </div>
