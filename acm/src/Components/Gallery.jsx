@@ -44,6 +44,7 @@ function Gallery() {
   const [pageNumberLimit] = useState(5);
   const [maxPageNumberLimit, setmaxPageNumberLimit] = useState(5);
   const [minPageNumberLimit, setminPageNumberLimit] = useState(0);
+  const [Loading, SetLoading] = useState(false);
 
   const handleClick = (event) => {
     setcurrentPage(Number(event.target.id));
@@ -77,10 +78,17 @@ function Gallery() {
   });
 
   useEffect(() => {
+    
+    SetLoading(true)
     fetch("/images")
       .then((response) => response.json())
       .then((json) => setData(json));
-  }, []);
+    SetLoading(false);
+    if (Loading) {
+      return "Loading"
+      
+    }
+  }, [Loading]);
 
   const handleNextbtn = () => {
     setcurrentPage(currentPage + 1);
