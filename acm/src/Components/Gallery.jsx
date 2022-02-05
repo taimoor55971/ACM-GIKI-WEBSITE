@@ -85,7 +85,7 @@ function Gallery() {
       .then((json) => setData(json));
     SetLoading(false);
     if (Loading) {
-      return "Loading"
+      return <h1>"Loading"</h1>
       
     }
   }, [Loading]);
