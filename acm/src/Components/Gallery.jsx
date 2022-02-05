@@ -78,17 +78,27 @@ function Gallery() {
   });
 
   useEffect(() => {
-    
-    SetLoading(true)
-    fetch("/images")
+   loadMessage();
+  }, []);
+
+  //
+  const loadMessage = async () => {
+    try {
+      SetLoading(true);
+      fetch("/images")
       .then((response) => response.json())
       .then((json) => setData(json));
-    SetLoading(false);
-    if (Loading) {
-      return <h1>"Loading"</h1>
-      
+      SetLoading(false);
+    } catch (e) {
+     
+      SetLoading(false);
     }
-  }, [Loading]);
+  };
+
+  if (Loading) {
+    return 'Loading...';
+  }
+  //
 
   const handleNextbtn = () => {
     setcurrentPage(currentPage + 1);
