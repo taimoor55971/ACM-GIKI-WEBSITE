@@ -85,7 +85,7 @@ function Ambassador() {
                   <label className="label control-label">Name</label>
                 </div>
                 <div className="col-md-9">
-                  <input type="text" className="form-control" name="Name" placeholder="Name" value={user.Name}
+                  <input type="text" className="form-control" name="Name" placeholder="Name" value={user.Name} required
                   onChange={handleChange}/>
                 </div>
               </div>
@@ -94,7 +94,7 @@ function Ambassador() {
                   <label className="label control-label">CNIC</label>
                 </div>
                 <div className="col-md-9">
-                  <input type="number" className="form-control" pattern="[0-9]{13}" name="Cnic" placeholder="xxxxxxxxxxxxx"
+                  <input type="number" className="form-control" pattern="[0-9]{13}" name="Cnic" placeholder="xxxxxxxxxxxxx" required
                     value={user.Cnic} onChange={handleChange} />
                 </div>
               </div>
@@ -103,7 +103,7 @@ function Ambassador() {
                   <label className="label control-label">Address</label>
                 </div>
                 <div className="col-md-9">
-                  <input type="text" className="form-control" name="Address" value={user.Address} onChange={handleChange}  />
+                  <input type="text" className="form-control" name="Address" value={user.Address} onChange={handleChange} required />
                 </div>
               </div>
               <div className="row">
@@ -111,7 +111,7 @@ function Ambassador() {
                   <label className="label control-label">University</label>
                 </div>
                 <div className="col-md-9">
-                  <input type="text" className="form-control" name="University" value={user.University} onChange={handleChange} />
+                  <input type="text" className="form-control" name="University" value={user.University} onChange={handleChange} required />
                 </div>
               </div>
               <div className="row">
@@ -119,7 +119,7 @@ function Ambassador() {
                   <label className="label control-label">Mobile</label>
                 </div>
                 <div className="col-md-9">
-                  <input type="number" className="form-control" pattern="[0-9]{11}" name="Mobile" placeholder="xxxx-xxxxxx-x" value={user.Mobile} onChange={handleChange} />
+                  <input type="number" className="form-control" pattern="[0-9]{11}" name="Mobile" placeholder="xxxx-xxxxxx-x" value={user.Mobile} onChange={handleChange} required />
                 </div>
               </div>
               <div className="row">
@@ -127,7 +127,7 @@ function Ambassador() {
                   <label className="label control-label">E-Mail</label>
                 </div>
                 <div className="col-md-9">
-                  <input type="Email" className="form-control" name="Email" placeholder="@gmail.com" value={user.Email} onChange={handleChange}  />
+                  <input type="Email" className="form-control" name="Email" placeholder="@gmail.com" value={user.Email} onChange={handleChange} required />
                 </div>
               </div>
               <div className="row" id="form-row">
@@ -135,7 +135,7 @@ function Ambassador() {
                   <label className="label control-label">No of Participants</label>
                 </div>
                 <div className="col-md-9">
-                  <input type="number" className="form-control" name="Participants" value={user.Participants} onChange={handleChange}  />
+                  <input type="number" className="form-control" name="Participants" value={user.Participants} onChange={handleChange} required  />
                 </div>
               </div>
               {/*<div class="row">
@@ -170,7 +170,7 @@ function Ambassador() {
                     <div className="tab-pane fade show active" id="nav-hack" role="tabpanel" aria-labelledby="nav-hack-tab">
                       <div className="row">
                         <div className="col color">
-                          <label className="contain  ">Hackathon<input type="checkbox"  name="Hackathon" checked={checked.Hackathon} onChange={handleChangecheck} /><span className="checkmark" /></label>
+                          <label className="contain  ">Hackathon<input  type="checkbox"  name="Hackathon" checked={checked.Hackathon} onChange={handleChangecheck} /><span className="checkmark" /></label>
                         </div>
                       </div>
                     </div>

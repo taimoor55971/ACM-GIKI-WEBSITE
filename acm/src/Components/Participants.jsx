@@ -115,7 +115,7 @@ function Participants() {
                                     </div>
                                     <div className="col-md-9">
                                         <input type="text" className="form-control" name="Name" placeholder="Name" value={user.Name}
-                                        onChange={handleChange}
+                                        onChange={handleChange} required
                                         />
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@ function Participants() {
                                     </div>
                                     <div className="col-md-9">
                                         <input type="number" className="form-control" pattern="[0-9]{13}" name="Cnic" placeholder="CNIC" value={user.Cnic}
-                                        onChange={handleChange}
+                                        onChange={handleChange} required
                                         />
                                     </div>
                                 </div>
@@ -134,7 +134,7 @@ function Participants() {
                                         <label className="label control-label">Ambassador</label>
                                     </div>
                                     <div className="col-md-9">
-                                        <input type="text" className="form-control" name="Amb" placeholder="Ambassador name" value={user.Amb} onChange={handleChange}/>
+                                        <input type="text" className="form-control" name="Amb" placeholder="Ambassador name" value={user.Amb} onChange={handleChange} required/>
                                             
                                        
                                     </div>
@@ -144,7 +144,7 @@ function Participants() {
                                         <label className="label control-label">University</label>
                                     </div>
                                     <div className="col-md-9">
-                                        <input  type="text" className="form-control" name="University" placeholder="Institute / College" value={user.University} onChange={handleChange}  />
+                                        <input  type="text" className="form-control" required name="University" placeholder="Institute / College" value={user.University} onChange={handleChange}  />
                                     </div>
                                 </div>
                                 <div className="row">
@@ -152,7 +152,7 @@ function Participants() {
                                         <label className="label control-label">Mobile</label>
                                     </div>
                                     <div className="col-md-9">
-                                        <input type="number" className="form-control" name="Mobile" pattern="[0-9]{11}" placeholder="xxxx-xxxxxx-x" value={user.Mobile} onChange={handleChange}  />
+                                        <input required type="number" className="form-control" name="Mobile" pattern="[0-9]{11}" placeholder="xxxx-xxxxxx-x" value={user.Mobile} onChange={handleChange}  />
                                     </div>
                                 </div>
                                 <div className="row">
@@ -160,7 +160,7 @@ function Participants() {
                                         <label className="label control-label">E-Mail</label>
                                     </div>
                                     <div className="col-md-9">
-                                        <input onChange={handleChange} type="email" className="form-control" name="Email" placeholder="@gmail.com" value={user.Email} />
+                                        <input required onChange={handleChange} type="email" className="form-control" name="Email" placeholder="@gmail.com" value={user.Email} />
                                     </div>
                                 </div>
                                 <div className="row">
@@ -235,7 +235,7 @@ function Participants() {
                                                 <label className="label control-label">Name</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input onChange={handleChange} type="text" className="form-control" name="NameL" placeholder="Name" value={user.NameL} />
+                                                <input onChange={handleChange} type="text" className="form-control" name="NameL" placeholder="Name" value={user.NameL} required />
                                             </div>
                                         </div>
                                         <div className="row">
@@ -243,7 +243,7 @@ function Participants() {
                                                 <label className="label control-label">CNIC</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input onChange={handleChange} type="number" className="form-control" name="CNICL" pattern="[0-9]{13}" placeholder="xxxxx-xxxxxxx-x"
+                                                <input onChange={handleChange} required type="number" className="form-control" name="CNICL" pattern="[0-9]{13}" placeholder="xxxxx-xxxxxxx-x"
                                                 value={user.CNICL}
                                                 />
                                             </div>
@@ -253,7 +253,7 @@ function Participants() {
                                                 <label className="label control-label">Team Name</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input onChange={handleChange} type="text" className="form-control" name="Tname" value={user.Tname}  />
+                                                <input onChange={handleChange} required type="text" className="form-control" name="Tname" value={user.Tname}  />
                                             </div>
                                         </div>
                                         <div className="row">
@@ -261,7 +261,7 @@ function Participants() {
                                                 <label className="label control-label">University</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input onChange={handleChange} type="text" className="form-control" name="UniversityL" placeholder="Institute / College"  value={user.UniversityL} />
+                                                <input onChange={handleChange} required type="text" className="form-control" name="UniversityL" placeholder="Institute / College"  value={user.UniversityL} />
                                             </div>
                                         </div>
                                         <div className="row">
@@ -269,7 +269,7 @@ function Participants() {
                                                 <label className="label control-label">Mobile</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input onChange={handleChange} type="number" className="form-control" name="MobileL" pattern="[0-9]{11}" placeholder="xxxx-xxxxxx-x" value={user.MobileL}  />
+                                                <input onChange={handleChange} required type="number" className="form-control" name="MobileL" pattern="[0-9]{11}" placeholder="xxxx-xxxxxx-x" value={user.MobileL}  />
                                             </div>
                                         </div>
                                         <div className="row">
@@ -277,7 +277,7 @@ function Participants() {
                                                 <label className="label control-label">E-Mail</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input onChange={handleChange} type="Email" className="form-control" name="EmailL" placeholder="@gmail.com" value={user.EmailL} />
+                                                <input onChange={handleChange} required type="Email" className="form-control" name="EmailL" placeholder="@gmail.com" value={user.EmailL} />
                                             </div>
                                         </div>
                                         {/* <input style={{ visibility: 'hidden' }} className="btn btn-info" /> */}
@@ -288,7 +288,7 @@ function Participants() {
                                                 <label className="label control-label">Name</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input onChange={handleChange} type="text" className="form-control" name="Name1" placeholder="Name" value={user.Name1}  />
+                                                <input onChange={handleChange} required type="text" className="form-control" name="Name1" placeholder="Name" value={user.Name1}  />
                                             </div>
                                         </div>
                                         <div className="row">
@@ -296,7 +296,7 @@ function Participants() {
                                                 <label className="label control-label">CNIC</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input onChange={handleChange} type="number" className="form-control" name="CNIC1" pattern="[0-9]{13}" placeholder="xxxxx-xxxxxxx-x" value={user.CNIC1}  />
+                                                <input onChange={handleChange} required type="number" className="form-control" name="CNIC1" pattern="[0-9]{13}" placeholder="xxxxx-xxxxxxx-x" value={user.CNIC1}  />
                                             </div>
                                         </div>
                                         <div className="row">
@@ -304,7 +304,7 @@ function Participants() {
                                                 <label className="label control-label">University</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input onChange={handleChange} type="text" className="form-control" name="University1" placeholder="Institute / College" value={user.University1}  />
+                                                <input onChange={handleChange } required type="text" className="form-control" name="University1" placeholder="Institute / College" value={user.University1}  />
                                             </div>
                                         </div>
                                         <div className="row">
@@ -312,7 +312,7 @@ function Participants() {
                                                 <label className="label control-label">Mobile</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input onChange={handleChange} type="number" className="form-control" name="Mobile1" pattern="[0-9]{11}" placeholder="xxxx-xxxxxx-x" value={user.Mobile1}  />
+                                                <input onChange={handleChange} required type="number" className="form-control" name="Mobile1" pattern="[0-9]{11}" placeholder="xxxx-xxxxxx-x" value={user.Mobile1}  />
                                             </div>
                                         </div>
                                         <div className="row">
@@ -320,7 +320,7 @@ function Participants() {
                                                 <label className="label control-label">E-Mail</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input onChange={handleChange} type="Email" className="form-control" name="Email1" placeholder="@gmail.com" value={user.Email1} />
+                                                <input onChange={handleChange} required type="Email" className="form-control" name="Email1" placeholder="@gmail.com" value={user.Email1} />
                                             </div>
                                         </div>
                                         {/* <input style={{ visibility: 'hidden' }} className="btn btn-info" /> */}
@@ -331,7 +331,7 @@ function Participants() {
                                                 <label className="label control-label">Name</label>
                                             </div>
                                             <div className="col-md-9">
-                                      <input onChange={handleChange} type="text" className="form-control" name="Name2" placeholder="Name" value={user.Name2} />
+                                      <input onChange={handleChange} required type="text" className="form-control" name="Name2" placeholder="Name" value={user.Name2} />
 
                                             </div>
                                         </div>
@@ -340,7 +340,7 @@ function Participants() {
                                                 <label className="label control-label">CNIC</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input type="number" className="form-control" name="CNIC2" pattern="[0-9]{13}" placeholder="xxxxx-xxxxxxx-x" value={user.CNIC2} onChange={handleChange}  />
+                                                <input type="number" required className="form-control" name="CNIC2" pattern="[0-9]{13}" placeholder="xxxxx-xxxxxxx-x" value={user.CNIC2} onChange={handleChange}  />
                                             </div>
                                         </div>
                                         <div className="row">
@@ -348,7 +348,7 @@ function Participants() {
                                                 <label className="label control-label">University</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input type="text" className="form-control" name="University2" placeholder="Institute / College" value={user.University2} onChange={handleChange}  />
+                                                <input type="text" required className="form-control" name="University2" placeholder="Institute / College" value={user.University2} onChange={handleChange}  />
                                             </div>
                                         </div>
                                         <div className="row">
@@ -356,7 +356,7 @@ function Participants() {
                                                 <label className="label control-label">Mobile</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input type="number" className="form-control" name="Mobile2" pattern="[0-9]{11}" placeholder="xxxx-xxxxxx-x" value={user.Mobile2} onChange={handleChange} />
+                                                <input type="number" required className="form-control" name="Mobile2" pattern="[0-9]{11}" placeholder="xxxx-xxxxxx-x" value={user.Mobile2} onChange={handleChange} />
                                             </div>
                                         </div>
                                         <div className="row">
@@ -364,7 +364,7 @@ function Participants() {
                                                 <label className="label control-label">E-Mail</label>
                                             </div>
                                             <div className="col-md-9">
-                                                <input type="Email" className="form-control" name="Email2" placeholder="@gmail.com" value={user.Email2} onChange={handleChange}  />
+                                                <input required type="Email" className="form-control" name="Email2" placeholder="@gmail.com" value={user.Email2} onChange={handleChange}  />
                                             </div>
                                         </div>
                                      <button type="submit" name="submit_icpc" defaultValue="Submit" className="btn btn-info" onClick={handleSubmit2}>Info</button>
