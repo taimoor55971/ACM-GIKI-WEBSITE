@@ -31,7 +31,7 @@ function Footer() {
                   field to these workshops
                 </p>
               </div>
-              <div className="col-12 col-lg-6">
+              <div className="col-12 col-lg-6 col-sm-5">
                 <h4 id>FACEBOOK</h4>
                  <iframe title={"a"} src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FACMGIKI&tabs=timeline&width=500&height=300&small_header=0&adapt_container_width=1&hide_cover=0&show_facepile=1&appId" height={300} style={{border: '1px solid black', overflow: 'hidden',width: '100%'}} scrolling="no" frameBorder={1} allowFullScreen="1" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" />
                 </div>
