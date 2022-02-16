@@ -17,7 +17,7 @@ function Footer() {
         <meta name="viewport" content="width=device-width,  initial-scale=1.0 ,user-scalable=no"></meta>
 
         </Helmet>
-             <div  className="footer">
+             <div  className="footer" style={{width: '100%'}}>
           <div className="container" >
             <div className="row justify-content-md-around" id="ftr-row">
               <div className="col-12 col-lg-3">
