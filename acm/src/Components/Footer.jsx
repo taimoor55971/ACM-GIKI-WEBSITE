@@ -4,11 +4,19 @@ import { logo2 } from './Images'
 //import { FcGoogle } from "react-icons/fc";
 import "../Assets/css/footer.css"
 import { SocialIcon } from 'react-social-icons';
+import { Helmet } from 'react-helmet';
 function Footer() {
   var date = new Date();
   
     return (
-        <div id="footer" data-aos="zoom-in">
+      <div id="footer" data-aos="zoom-in">
+         <Helmet >
+          <meta charSet="utf-8" />
+          
+       
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0 ,user-scalable=no"></meta>
+
+        </Helmet>
              <div  className="footer">
           <div className="container" >
             <div className="row justify-content-md-around" id="ftr-row">
