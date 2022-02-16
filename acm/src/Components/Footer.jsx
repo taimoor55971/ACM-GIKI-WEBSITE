@@ -5,7 +5,8 @@ import { logo2 } from './Images'
 import "../Assets/css/footer.css"
 import { SocialIcon } from 'react-social-icons';
 function Footer() {
-
+  var date = new Date();
+  
     return (
         <div id="footer" data-aos="zoom-in">
              <div  className="footer">
@@ -61,7 +62,7 @@ function Footer() {
             <div className="row justify-content-center">
               <div className="col-12 col-lg-6">
                 <p style={{fontSize: '15px !important', fontFamily: '"Roboto", sans-serif !important'}} className="lead4">
-                  Copyright © <span className="date">2021</span> All rights
+                  Copyright © <span className="date">{ date.getFullYear()}</span> All rights
                   reserved | Website by
                   {/* <a id="ATT" href="https://www.linkedin.com/in/taimoor-khan-96b19b190/"rel="noreferrer" target="_blank">ACM TECH TEAM</a> */}
                 </p>
