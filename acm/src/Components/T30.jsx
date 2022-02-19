@@ -8,6 +8,7 @@ import Zoom from 'react-medium-image-zoom'
 // import "../Assets/css/gallery.css"
 import { Helmet } from "react-helmet";
 import "../Assets/css/team.css"
+import { useLayoutEffect } from "react";
 
 const renderData = (items, e) => {
   
@@ -50,7 +51,7 @@ function T30({API}) {
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
 
   // eslint-disable-next-line no-unused-vars
-  useEffect(() => {
+  useLayoutEffect(() => {
     fetch(API)
       .then((response) => response.json())
       .then((json) => setData(json));
