@@ -10,6 +10,14 @@ body {
   width: 100% !important;
 
 }
+@media only screen and (min-width: 992px) {
+  .Cimages {
+    margin-top: 10vh;
+    height:90vh!important;
+    width: 100% !important; 
+    /* //background-size: auto !important; */
+  }
+}
 
 @media screen and (max-width: 400px) {
   .navbar {
@@ -46,7 +54,7 @@ body {
   }
 
   .carousel-inner {
-    height: 625px;
+    height: 800px;
 
   }
 

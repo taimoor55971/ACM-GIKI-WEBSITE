@@ -15,8 +15,6 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 import Sponsor from "./Sponsor"
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-
 import { Helmet } from 'react-helmet';
 
 function Home() {
@@ -31,31 +29,20 @@ function Home() {
         </Helmet>
 {/*         
         <Carousel  infiniteLoop autoplay={true} interval={200} showThumbs={false} showIndicators={false} showStatus={false} > */}
-                    <OwlCarousel  className="owl-theme" lazyLoad={1} autoplayHoverPause={0} items={1} loop autoplay={1} autoplayTimeout={2500} dots={0} >
+                    <OwlCarousel  className="owl-theme" lazyLoad={1} autoplayHoverPause={0} items={1} loop autoplay={1} autoplayTimeout={2500} dots={0} height={"10"} >
                     {/* <div style={{marginTop:"5%", width: '100%'}}  > */}
                      {/* <LazyLoadImage  src={C4}/>
                    
                    </div>       */}
-            {/* <div style={{marginTop:"5%",width: '100%', height: '10'}}  > */}
-                    <img  src={C5}  alt=""/>
+          {/* <div style={{marginTop:"5%",width: '100%', height: '10'}}  > */}
+                     <img src={C1} className="Cimages" />
+                     {/* <img  src={C3} className="Cimages"/> */}
+                    <img  src={C5} className="Cimages" alt="" />
+                    <img  src={C4} className="Cimages"  alt=""/>                    
+                    <img  src={C2} className="Cimages"/>
                    
-          
-           <div>
-                    <img  src={C4}  alt=""/>
-                   
-                </div>
-                   <div>
-                    <img  src={C1} />
-                   
-                </div>
-                <div>
-                    <img  src={C2}/>
-                  
-                </div>
-                <div>
-                    <img  src={C3}/>
                     
-                </div>
+                
           {/* </Carousel> */}
           </OwlCarousel>
             

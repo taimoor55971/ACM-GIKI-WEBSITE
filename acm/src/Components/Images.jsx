@@ -1,8 +1,9 @@
-import C1 from "../Assets/img/index/carousel1.jpg"
+import C1 from "../Assets/img/index/ICPC.jpeg"
 import C2 from "../Assets/img/index/carousel2.jpg"
-import C3 from "../Assets/img/index/carousel3.jpg"
+import C3 from "../Assets/img/index/Inductions.jpg"
 import C4 from "../Assets/img/index/Volunteer.jpg"
 import C5 from "../Assets/img/index/Poster_workshop.jpg"
+
 import lptp from "../Assets/img/index/lptp.png"
 import tag from "../Assets/img/index/tag.png"
 import mic from "../Assets/img/index/mic.png"
@@ -67,10 +68,6 @@ export {
     C1, C2, C3,C4,C5, lptp, tag, mic, poster, social, granna, ibm, hum, toyota, Dost, uworlx, topcity, sapien, microsoft,
     kualitatem,virtualforce,genlTeam,logo2,pseb,di,acmlogonav,
     P,SA, VP, ECS, ECI, GS, DS, DP, DL, DT, Tresurer, head1, head2, head3, head4, head5, head6, head7, head8,
-    // image1, image2, image3,
-    // image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18,
-    // image19, image20, image21, image22, image23, image24, image25, image26, image27, image28, image29, image30, image31, image32, image33, image34, image35, image36, image37, image38,
-    // image39, image40, image41, image42,image43, image44, image45, image46, image47, image48, image49, image50, image51, image52, image53, image54, image55, image56,
     Logo, Account, Ticket, background,LiasonPackage,softcom,hack,quiz,startup,posterDes,icpc
     
 };
