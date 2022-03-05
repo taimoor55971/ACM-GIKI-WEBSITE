@@ -1,7 +1,7 @@
 import C1 from "../Assets/img/index/ICPC.png";
 import C2 from "../Assets/img/index/carousel2.jpg"
 import C3 from "../Assets/img/index/Inductions.jpg"
-import C4 from "../Assets/img/index/Volunteer.jpg"
+import C4 from "../Assets/img/index/Prelim Winners.jpg"
 import C5 from "../Assets/img/index/Poster_workshop.jpg"
 
 import lptp from "../Assets/img/index/lptp.png"

@@ -148,7 +148,7 @@ function ICPC() {
                   </div>
                   <div className="col-md-6 col-6" style={{fontWeight: 700, textAlign: 'center'}}>
                     Registration Deadline: TO BE ANNOUNCED! <br />
-                    Contest Dates: TO BE ANNOUNCED! <br />
+                    Contest Dates: 19 March 2022 - 20 March 2022 <br />
                     Fees per team (Foreign Students) : TO BE ANNOUNCED! <br />
                     Fees per team (Local Students) : TO BE ANNOUNCED!
                   </div>

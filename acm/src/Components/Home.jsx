@@ -36,9 +36,10 @@ function Home() {
                    </div>       */}
           {/* <div style={{marginTop:"5%",width: '100%', height: '10'}}  > */}
                      <img src={C1} className="Cimages" />
-                     {/* <img  src={C3} className="Cimages"/> */}
+          {/* <img  src={C3} className="Cimages"/> */}
+          <img  src={C4} className="Cimages"  alt=""/>  
                     <img  src={C5} className="Cimages" alt="" />
-                    <img  src={C4} className="Cimages"  alt=""/>                    
+                                      
                     <img  src={C2} className="Cimages"/>
                    
                     
@@ -57,8 +58,8 @@ function Home() {
               <hr />
               <ul className="news" data-aos="zoom-in" >
               
-                <li>ICPC Asia Topi Regional Registration Ends on <span className="date">15 December 2020</span></li>
-                <li>ICPC Asia Topi Regional Online Contest on <span className="date">22-23 December 2020</span></li>
+                <li>ICPC Asia Topi Regional Registration Ends on: <span className="date">Closed</span></li>
+                <li>ICPC Asia Topi Regional Online Contest on <span className="date">25-26 January 2020</span></li>
                 <li>ICPC Asia Topi Regional Registrations Opened <Link id="ATT" to="/participant">Click here to register</Link></li>
               </ul>
             </div>
