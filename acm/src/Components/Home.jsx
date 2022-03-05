@@ -59,7 +59,7 @@ function Home() {
               <ul className="news" data-aos="zoom-in" >
               
                 <li>ICPC Asia Topi Regional Registration Ends on: <span className="date">Closed</span></li>
-                <li>ICPC Asia Topi Regional Online Contest on <span className="date">25-26 January 2020</span></li>
+                <li>ICPC Asia Topi Regional Online Contest on <span className="date">25-26 January 2022</span></li>
                 <li>ICPC Asia Topi Regional Registrations Opened <Link id="ATT" to="/participant">Click here to register</Link></li>
               </ul>
             </div>
