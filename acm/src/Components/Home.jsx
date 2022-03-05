@@ -38,7 +38,7 @@ function Home() {
                      <img src={C1} className="Cimages" />
           {/* <img  src={C3} className="Cimages"/> */}
           <img  src={C4} className="Cimages"  alt=""/>  
-                    <img  src={C5} className="Cimages" alt="" />
+                    {/* <img  src={C5} className="Cimages" alt="" /> */}
                                       
                     <img  src={C2} className="Cimages"/>
                    
