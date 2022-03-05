@@ -61,6 +61,7 @@ function Home() {
                 <li>ICPC Asia Topi Regional Registration Ends on: <span className="date">Closed</span></li>
                 <li>ICPC Asia Topi Regional Online Contest on <span className="date">25-26 January 2022</span></li>
                 <li>ICPC Asia Topi Regional Registrations Opened <Link id="ATT" to="/participant">Click here to register</Link></li>
+                <li>Onsite ICPC Asia Topi West  Contest on <span className="date">19-20 March 2022</span></li>
               </ul>
             </div>
             <div className="space1" />
