@@ -8,7 +8,7 @@ import Team from './Team'
 import "../Assets/css/team.css"
 import { Helmet } from 'react-helmet'
 import T30 from "./T30"
-
+import ScrollToTop from "react-scroll-to-top";
 
 
 
@@ -18,6 +18,7 @@ function Member() {
 
     return (
       <div id="member">
+        <ScrollToTop smooth color="#6f00ff" />
          <Helmet >
           <meta charSet="utf-8" />
           <title>ACM_GIKI Chapter | OUR Team</title>

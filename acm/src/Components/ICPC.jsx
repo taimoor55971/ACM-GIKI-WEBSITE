@@ -5,9 +5,11 @@ import "../Assets/css/icpc.css"
 import { Parallax } from 'react-scroll-parallax';
 import "../Assets/css/App.css"
 import { Helmet } from 'react-helmet';
+import ScrollToTop from "react-scroll-to-top";
 function ICPC() {
     return (
       <div className="" >
+        <ScrollToTop smooth color="#6f00ff" />
          <Helmet >
           <meta charSet="utf-8" />
           <title>ACM_GIKI Chapter | ICPC</title>

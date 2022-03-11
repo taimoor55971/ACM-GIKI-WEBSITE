@@ -16,11 +16,12 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Sponsor from "./Sponsor"
 
 import { Helmet } from 'react-helmet';
-
+import ScrollToTop from "react-scroll-to-top";
 function Home() {
 
     return (
       <div >
+        <ScrollToTop smooth color="#6f00ff" />
           <Helmet >
           <meta charSet="utf-8" />
           <title>ACM_GIKI Chapter</title>

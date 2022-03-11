@@ -4,12 +4,14 @@ import 'react-medium-image-zoom/dist/styles.css'
 import Zoom from 'react-medium-image-zoom'
 import "../Assets/css/gallery.css"
 import { Helmet } from "react-helmet";
+import ScrollToTop from "react-scroll-to-top";
 
 const renderData = (items, e) => {
   
   return (
     
     <div className="container gallery">
+      <ScrollToTop smooth color="#6f00ff" />
          <Helmet >
           <meta charSet="utf-8" />
           <title>ACM_GIKI Chapter|Gallery</title>

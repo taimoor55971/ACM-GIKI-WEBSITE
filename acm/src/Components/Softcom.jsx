@@ -2,10 +2,12 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import "../Assets/css/softcom.css"
 import { hack, icpc, posterDes, quiz, softcom, startup } from './Images'
+import ScrollToTop from "react-scroll-to-top";
 
 function Softcom() {
     return (
       <div id="softcom">
+        <ScrollToTop smooth color="#6f00ff" />
          <Helmet >
           <meta charSet="utf-8" />
           <title>ACM_GIKI Chapter | Softcom</title>
