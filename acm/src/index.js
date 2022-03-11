@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
 import App from './App';
+import ScrollToTop from './Components/ScrollToTopOnMount';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
    
     
    
- 
+ <ScrollToTop>
     
-      <App />
+    <App />
+    </ScrollToTop>
      
   ,
   
