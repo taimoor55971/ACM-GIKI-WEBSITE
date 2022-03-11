@@ -13,7 +13,9 @@ const Amb = require("../models/amb_Schema");
 const Ps = require("../models/psSchema");
 const Pi = require("../models/piSchema");
 const image = require("../models/imageSchema")
-const member=require("../models/members")
+const member29=require("../models/member_29")
+const member = require("../models/members")
+const member_31 = require('../models/member_31');
 
 // router.get("/", (req,res) => {
 //     res.send("Backend for maintainiance");
@@ -221,6 +223,34 @@ router.get("/images", async (req, res) => {
   
 })
 
+
+//29//
+
+router.post("/members29",(req,res) => {
+
+  // console.log(req.body);
+  const mem = new member29(req.body);
+  mem.save().then(() => {
+    res.send(mem);
+  }).catch((err) => {console.log(err)})
+})
+
+
+router.get("/members29", async (req, res) => {
+ 
+  try {
+    const mem = await member29.find();
+    
+    res.send(mem);
+  }catch(err) {console.log(err)}
+  
+  
+})
+//29//
+
+//30//
+
+
 router.post("/members",(req,res) => {
 
   // console.log(req.body);
@@ -242,6 +272,31 @@ router.get("/members", async (req, res) => {
   
 })
 
+//30//
+
+//31//
+
+router.post("/members31",(req,res) => {
+
+  // console.log(req.body);
+  const mem = new member_31(req.body);
+  mem.save().then(() => {
+    res.send(mem);
+  }).catch((err) => {console.log(err)})
+})
+
+
+router.get("/members31", async (req, res) => {
+ 
+  try {
+    const mem = await member_31.find();
+    
+    res.send(mem);
+  }catch(err) {console.log(err)}
+  
+  
+})
+//31//
 
 module.exports=router;
 

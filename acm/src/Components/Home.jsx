@@ -29,7 +29,7 @@ function Home() {
         </Helmet>
 {/*         
         <Carousel  infiniteLoop autoplay={true} interval={200} showThumbs={false} showIndicators={false} showStatus={false} > */}
-                    <OwlCarousel  className="owl-theme" lazyLoad={1} autoplayHoverPause={0} items={1} loop autoplay={1} autoplayTimeout={2500} dots={0} height={"10"} >
+                    <OwlCarousel  className="owl-theme" lazyLoad={1} autoplayHoverPause={1} items={1} loop autoplay={1} autoplayTimeout={3000} dots={1} height={"10"} >
                     {/* <div style={{marginTop:"5%", width: '100%'}}  > */}
                      {/* <LazyLoadImage  src={C4}/>
                    

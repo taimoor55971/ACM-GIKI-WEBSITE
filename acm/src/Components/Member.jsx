@@ -80,15 +80,7 @@ function Member() {
                 <h2 style={{textAlign: 'center'}}>BATCH 29</h2>
                 <div className="row justify-content-md-center" style={{height: '100%',width:"100%"}} id="mem-row">
                   
-                 <Team image={head1}/>
-                  <Team image={head2}/>
-                  <Team image={head3}/>
-                  
-                  {/* <Team image={head4} />
-                  <Team image={head5} />
-                  <Team image={head6}/>
-                  <Team image={head7} />
-                  <Team image={head8} /> */}
+                 <T30 API={"/members29"}/>
                   </div>
                   
               </div>
@@ -109,7 +101,7 @@ function Member() {
                 <h2 style={{textAlign: 'center'}}>BATCH 31</h2>
                 <div className="row justify-content-md-center" id="mem-row">
                   
-                 {/* <T30 API={"/members"}/> */}
+                 <T30 API={"/members31"}/>
                 </div>
               </div>
             </div>
