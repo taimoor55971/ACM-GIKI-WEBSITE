@@ -3,9 +3,7 @@
 
 
 import React, { useEffect, useState } from "react";
-import 'react-medium-image-zoom/dist/styles.css'
-import Zoom from 'react-medium-image-zoom'
-// import "../Assets/css/gallery.css"
+
 import { Helmet } from "react-helmet";
 import "../Assets/css/team.css"
 import { useLayoutEffect } from "react";
@@ -45,7 +43,7 @@ function T30({API}) {
   const [data, setData] = useState([]);
 
   const [currentPage, ] = useState(1);
-  const [itemsPerPage] = useState(12);
+  const [itemsPerPage] = useState(50);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
