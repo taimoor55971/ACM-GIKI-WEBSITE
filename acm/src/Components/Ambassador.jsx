@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from "react-router-dom";
 import "../Assets/css/ambassador.css"
-
+import ScrollToTop from "react-scroll-to-top";
 function Ambassador() {
 
   const history = useHistory();
@@ -66,6 +66,7 @@ function Ambassador() {
     return (
       
       <div className="container" id="ambassador">
+        <ScrollToTop smooth color="#6f00ff" />
         <h2>AMBASSADOR REGISTRATION</h2>
         <form  method="POST" >
           <div className="row">

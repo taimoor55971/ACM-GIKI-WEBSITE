@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import "../Assets/css/participants.css"
 import Button from 'react-bootstrap/Button';
 
-
+import ScrollToTop from "react-scroll-to-top";
 
 function Participants() {
     const history =useHistory();
@@ -86,6 +86,7 @@ function Participants() {
     
     return (
         <div className="container" id="participants">
+            <ScrollToTop smooth color="#6f00ff" />
             <h2>PARTICIPANT REGISTRATION</h2><br /><br />
             <navbar className="team">
                 <div className="nav" id="module-nav-tab" role="tablist">
