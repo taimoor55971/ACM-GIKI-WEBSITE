@@ -47,7 +47,7 @@ const request = mailjet
     
     {
       "From": {
-        "Email": "tk55971@gmail.com",
+        "Email": "acmgiki19@gmail.com",
         "Name": "acmgiki"
       },
       "To": [
@@ -60,7 +60,7 @@ const request = mailjet
       "HTMLPart": `
      <pre>
      <h3>Dear ${Name}!</h3> 
-     You have successfuly registered as a ambasssador for  Softcom.
+     You have successfuly registered as a ambasssador for 21st  Softcom.
               For Details Contact:
                        Liaison Head: Awais Sajjad (0331-3153332)
                       Liaison Head: Obail Tariq (0333-4424450)
@@ -110,7 +110,7 @@ router.post("/registerps", (req, res) => {
     
     {
       "From": {
-        "Email": "tk55971@gmail.com",
+        "Email": "acmgiki19@gmail.com",
         "Name": "acmgiki"
       },
       "To": [
@@ -123,7 +123,7 @@ router.post("/registerps", (req, res) => {
       "HTMLPart": `
   <pre>
      <h3>Dear ${Name}!</h3> 
-     You have successfuly registered as a participant for 20th Softcom.
+     You have successfuly registered as a participant for 21st Softcom.
               For Details Contact:
                       Liaison Head: Awais Sajjad (0331-3153332)
                       Liaison Head: Obail Tariq (0333-4424450)
@@ -165,7 +165,7 @@ router.post("/registerpi", (req, res) => {
     
     {
       "From": {
-        "Email": "tk55971@gmail.com",
+        "Email": "acmgiki19@gmail.com",
         "Name": "acmgiki"
       },
       "To": [
