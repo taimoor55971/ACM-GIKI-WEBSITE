@@ -54,7 +54,9 @@ function Participants() {
      
         }
         if (res.status === 201 || res.status === 200) {
-            alert("registeration successful");
+            alert("registeration successful.CHECK YOUR EMAIL");
+            history.push("/");
+            // setUser({ ...user, [NameL]: "" })
         }
     }
     
@@ -79,7 +81,8 @@ function Participants() {
       console.log("Invalid registration");
     } else {
       window.alert("Successful registration");
-      console.log("Successful registration");
+        console.log("Successful registration");
+        
       history.push("/");
     }
     }

@@ -96,7 +96,8 @@ router.post("/registerps", (req, res) => {
    
         const ps = new Ps({ Name, Cnic,Amb, University, Mobile, Email,Hackathon, Quiz, Poster, Startup });
 
-        ps.save().then(() => res.status(201).json({ success: "Registeration Suceesful!" }
+  ps.save().then(() => res.status(201).json({ success: "Registeration Suceesful!" }
+         
         
         ))
             .catch((error) => res.status(500).json({ error: `regitration Failure ${error}` }));
