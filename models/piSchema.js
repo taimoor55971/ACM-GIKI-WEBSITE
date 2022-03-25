@@ -6,7 +6,7 @@ const PIchema = new mongoose.Schema({
          required: [true, "Please provide the information"],
     },
     CNICL: {
-        type: Number,
+        type: String,
          required: [true, "Please provide the information"],
     },
     
@@ -21,7 +21,7 @@ const PIchema = new mongoose.Schema({
          required: [true, "Please provide the information"],
     },
     MobileL: {
-        type: Number,
+        type: String,
          required: [true, "Please provide the information"],
     },
     EmailL: {
@@ -36,7 +36,7 @@ const PIchema = new mongoose.Schema({
          required: [true, "Please provide the information"],
     },
     CNIC1: {
-        type: Number,
+        type: String,
          required: [true, "Please provide the information"],
     },
     
@@ -48,7 +48,7 @@ const PIchema = new mongoose.Schema({
     },
     
     Mobile1: {
-        type: Number,
+        type: String,
          required: [true, "Please provide the information"],
     },
     Email1: {
@@ -72,7 +72,7 @@ const PIchema = new mongoose.Schema({
     },
     
     Mobile2: {
-        type: Number,
+        type: String,
          required: [true, "Please provide the information"],
     },
     Email2: {

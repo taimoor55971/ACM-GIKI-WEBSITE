@@ -6,7 +6,7 @@ const PSchema = new mongoose.Schema({
          required: [true, "Please provide the information"],
     },
     Cnic: {
-        type: Number,
+        type: String,
          required: [true, "Please provide the information"],
     },
     
@@ -20,7 +20,7 @@ const PSchema = new mongoose.Schema({
          required: [true, "Please provide the information"],
     },
     Mobile: {
-        type: Number,
+        type: String,
          required: [true, "Please provide the information"],
     },
     Email: {

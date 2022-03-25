@@ -128,7 +128,7 @@ function Participants() {
                                         <label className="label control-label">CNIC</label>
                                     </div>
                                     <div className="col-md-9">
-                                        <input type="number" className="form-control" pattern="[0-9]{13}" name="Cnic" placeholder="CNIC" value={user.Cnic}
+                                        <input type="text" className="form-control"  pattern="[0-9]{13}"    name="Cnic" placeholder="xxxxx-xxxxxxx-x" value={user.Cnic}
                                         onChange={handleChange} required
                                         />
                                     </div>
@@ -156,7 +156,7 @@ function Participants() {
                                         <label className="label control-label">Mobile</label>
                                     </div>
                                     <div className="col-md-9">
-                                        <input required type="number" className="form-control" name="Mobile" pattern="[0-9]{11}" placeholder="xxxx-xxxxxx-x" value={user.Mobile} onChange={handleChange}  />
+                                        <input required type="text" className="form-control" name="Mobile" pattern="[0-9]{12}" placeholder="+92xxxxxxxxxx" value={user.Mobile} onChange={handleChange}  />
                                     </div>
                                 </div>
                                 <div className="row">
