@@ -44,8 +44,10 @@ if (process.env.NODE_ENV === "production") {
         res.send("api running");
     })
 }
-
+const date=new Date();
 
 app.listen(PORT, (req, res) => {
     console.log(`listing to port ${PORT}`);
+    
+
 });

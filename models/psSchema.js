@@ -44,6 +44,8 @@ const PSchema = new mongoose.Schema({
         type: Boolean,
         
     }
+},{
+    timestamps: true
 });
 
 

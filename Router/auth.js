@@ -56,7 +56,7 @@ const request = mailjet
           "Name": `${Name}`
         }
       ],
-      "Subject": "Ambassador registration for 22nd Softcom",
+      "Subject": "Ambassador registration for 20nd Softcom",
       "HTMLPart": `
      <pre>
      <h3>Dear ${Name}!</h3> 
@@ -124,7 +124,7 @@ router.post("/registerps", (req, res) => {
       "HTMLPart": `
   <pre>
      <h3>Dear ${Name}!</h3> 
-     You have successfuly registered as a participant for 22nd Softcom.
+     You have successfuly registered as a participant for 20nd Softcom.
               For Details Contact:
                       Liaison Head: Awais Sajjad (0331-3153332)
                       Liaison Head: Obail Tariq (0333-4424450)
