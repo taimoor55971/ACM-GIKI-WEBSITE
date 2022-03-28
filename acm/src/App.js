@@ -3,7 +3,7 @@ import React from 'react'
 
 import Navbar from './Components/Navbar'
 import {  Switch, Route } from "react-router-dom"
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import Home from './Components/Home'
 import About from './Components/About'
 import Footer from './Components/Footer'
@@ -23,7 +23,7 @@ import ScrollToTop from './Components/ScrollToTopOnMount'
 function App() {
   return (
     <div>
-<BrowserRouter>
+<HashRouter>
         <Navbar />
       
 
@@ -46,7 +46,7 @@ function App() {
         </Switch>
       <Footer/> 
         
-        </BrowserRouter>
+        </HashRouter>
         
     </div>
   )
