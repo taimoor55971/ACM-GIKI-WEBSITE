@@ -1,29 +1,28 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 
 
 import Navbar from './Components/Navbar'
 import {  Switch, Route } from "react-router-dom"
 import { BrowserRouter } from 'react-router-dom'
-import Home from './Components/Home'
-import About from './Components/About'
-import Footer from './Components/Footer'
 
-// import "./App.css"
-import Member from './Components/Member'
-import Softcom from './Components/Softcom'
-
-import Participants from './Components/Participants'
-import Ambassador from './Components/Ambassador'
-import ICPC from './Components/ICPC'
 import { ParallaxProvider } from 'react-scroll-parallax';
-import GALLARY from './Components/Gallery'
+
 
 import ScrollToTop from './Components/ScrollToTopOnMount'
-
+const Home = lazy(() => import('./Components/Home'));
+const About = lazy(() => import('./Components/About'))
+const Member = lazy(() => import('./Components/Member'));
+const Softcom = lazy(() => import('./Components/Softcom'));
+const ICPC = lazy(() => import('./Components/ICPC'));
+const GALLARY = lazy(() => import('./Components/Gallery'));
+const Participants = lazy(() => import('./Components/Participants'));
+const Ambassador = lazy(() => import('./Components/Ambassador'));
+const Footer = lazy(() => import('./Components/Footer'));
 function App() {
   return (
     <div>
-<BrowserRouter>
+      <BrowserRouter>
+        <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
       
 
@@ -45,7 +44,7 @@ function App() {
             </ParallaxProvider>
         </Switch>
       <Footer/> 
-        
+        </Suspense>
         </BrowserRouter>
         
     </div>
