@@ -6,6 +6,7 @@ import {  Switch, Route } from "react-router-dom"
 import { BrowserRouter } from 'react-router-dom'
 
 import { ParallaxProvider } from 'react-scroll-parallax';
+import ReactLoading from 'react-loading';
 
 
 import ScrollToTop from './Components/ScrollToTopOnMount'
@@ -22,7 +23,8 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Suspense fallback={<div>Loading...</div>}>
+      {/* <ReactLoading type="balls"  height={200} width={200} paddingTop={500}/> */}
+        <Suspense fallback={<ReactLoading className="loader" type="spinningBubbles"  height={50} width={50}  />}>
         <Navbar />
       
 
