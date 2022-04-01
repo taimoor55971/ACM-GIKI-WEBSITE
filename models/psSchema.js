@@ -32,6 +32,12 @@ const PSchema = new mongoose.Schema({
         
         
     },
+    Graphic_Designing_Competition:
+        { type: Boolean },
+    WEB_DEVELOPMENT:
+        { type: Boolean },
+    APP_DEVELOPMENT:
+        { type: Boolean },
     Quiz: {
         type: Boolean,
         

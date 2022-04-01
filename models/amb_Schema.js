@@ -34,7 +34,12 @@ const userSchema = new mongoose.Schema({
         type: Boolean,
         
         
-    },
+    },Graphic_Designing_Competition:
+        { type: Boolean },
+    WEB_DEVELOPMENT:
+        { type: Boolean },
+    APP_DEVELOPMENT:
+        { type: Boolean },
     Quiz: {
         type: Boolean,
         

@@ -25,12 +25,12 @@ const member_31 = require('../models/member_31');
 
 
 router.post("/register", (req, res) => {
-   const {Name,Cnic,Address,University,Mobile,Email,Participants,Hackathon, Quiz, Poster, Startup} = req.body;
+   const {Name,Cnic,Address,University,Mobile,Email,Participants,Hackathon, Quiz, Poster, Startup,WEB_DEVELOPMENT, APP_DEVELOPMENT} = req.body;
     if (!Name || !Cnic || !Address || !University || !Mobile || !Email || !Participants) {
         return res.status(422).json({ error: "Fill the spaces" });
     } 
    
-        const amb = new Amb({ Name, Cnic, Address, University, Mobile, Email, Participants,Hackathon, Quiz, Poster, Startup });
+        const amb = new Amb({ Name, Cnic, Address, University, Mobile, Email, Participants,Hackathon, Quiz, Poster, Startup,WEB_DEVELOPMENT, APP_DEVELOPMENT });
 
         amb.save().then(() => res.status(201).json({ success: "Registeration Suceesful!" }
         
@@ -56,7 +56,7 @@ const request = mailjet
           "Name": `${Name}`
         }
       ],
-      "Subject": "Ambassador registration for 20nd Softcom",
+      "Subject": "Ambassador registration for 20th Softcom",
       "HTMLPart": `
      <pre>
      <h3>Dear ${Name}!</h3> 
@@ -85,7 +85,7 @@ request
 });
 
 router.post("/registerps", (req, res) => {
-   const {Name,Cnic,Amb,University,Mobile,Email,Hackathon, Quiz, Poster, Startup} = req.body;
+   const {Name,Cnic,Amb,University,Mobile,Email,Hackathon, Quiz, Poster, Startup,WEB_DEVELOPMENT,APP_DEVELOPMENT} = req.body;
     if (!Name || !Cnic ||!Amb  || !University || !Mobile || !Email) {
       return res.status(422).json({ error: "Fill the spaces" });
 
@@ -94,7 +94,7 @@ router.post("/registerps", (req, res) => {
      
     } 
    
-        const ps = new Ps({ Name, Cnic,Amb, University, Mobile, Email,Hackathon, Quiz, Poster, Startup });
+        const ps = new Ps({ Name, Cnic,Amb, University, Mobile, Email,Hackathon, Quiz, Poster, Startup,WEB_DEVELOPMENT, APP_DEVELOPMENT});
 
   ps.save().then(() => res.status(201).json({ success: "Registeration Suceesful!" }
          

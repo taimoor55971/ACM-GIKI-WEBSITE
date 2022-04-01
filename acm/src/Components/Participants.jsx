@@ -16,7 +16,7 @@ function Participants() {
     });
    const [checked, setChecked] = useState({
     Hackathon: 0, Quiz: 0,
-    Poster: 0, Startup: 0
+    Poster: 0, Startup: 0,Graphic_Designing_Competition:0,WEB_DEVELOPMENT:0,APP_DEVELOPMENT:0
   });
     let name, value;
    const handleChange = (e) => {
@@ -35,13 +35,13 @@ function Participants() {
     const handleSubmit = async (e) => {
     e.preventDefault();
         const { Name, Cnic, Amb, University, Mobile, Email } = user;
-         const { Hackathon, Quiz, Poster, Startup } = checked;
+         const { Hackathon, Quiz, Poster, Startup,Graphic_Designing_Competition,WEB_DEVELOPMENT,APP_DEVELOPMENT } = checked;
     const res = await fetch("/registerps", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ Name, Cnic,Amb, University, Mobile, Email,Hackathon, Quiz, Poster, Startup}),
+      body: JSON.stringify({ Name, Cnic,Amb, University, Mobile, Email,Hackathon, Quiz, Poster, Startup,Graphic_Designing_Competition,WEB_DEVELOPMENT,APP_DEVELOPMENT}),
     });
 
        
@@ -179,24 +179,40 @@ function Participants() {
                                     <div className="col-md-7 offset-md-3 col-12">
                                         <nav>
                                             <div className="nav" id="form-nav-tab" role="tablist">
-                                                <a className="nav-item nav-link" id="nav-hack-tab" data-toggle="tab" href="#nav-hack" role="tab" aria-controls="nav-hack" aria-selected="true">Hackathon</a>
+                                                <a className="nav-item nav-link" id="nav-hack-tab" data-toggle="tab" href="#nav-hack" role="tab" aria-controls="nav-hack" aria-selected="true">Coding Modules</a>
                                                 <a className="nav-item nav-link" id="nav-other-tab" data-toggle="tab" href="#nav-other" role="tab" aria-controls="nav-other" aria-selected="false">Other Modules</a>
                                             </div>
                                             <hr id="form-navline" />
                                         </nav>
                                         <div className="tab-content" id="nav-tabContent">
                                             <div className="tab-pane fade show active" id="nav-hack" role="tabpanel" aria-labelledby="nav-hack-tab">
+                                                {/* //HAckathon */}
                                                 <div className="row">
                                                     <div className="col color" >
                                                         <label className="contain " >Hackathon<input type="checkbox"  name="Hackathon" checked={checked.Hackathon} onChange={handleChangecheck} /><span className="checkmark" /></label>
                                                     </div>
+                                                    
+                                                </div>
+                                                {/* Web Development */}
+                                                          <div className="row">
+                                                    <div className="col color" >
+                                                        <label className="contain " >Web Development<input type="checkbox"  name="WEB_DEVELOPMENT" checked={checked.WEB_DEVELOPMENT} onChange={handleChangecheck} /><span className="checkmark" /></label>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                          <div className="row">
+                                                    <div className="col color" >
+                                                        <label className="contain " >App Development<input type="checkbox"  name="APP_DEVELOPMENT" checked={checked.APP_DEVELOPMENT} onChange={handleChangecheck} /><span className="checkmark" /></label>
+                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div className="tab-pane fade" id="nav-other" role="tabpanel" aria-labelledby="nav-other-tab">
                                                 <div className="row">
                                                     <div className="col color">
                                                         <label className="contain">Quiz Competition<input type="checkbox"  name="Quiz" checked={checked.Quiz} onChange={handleChangecheck} /><span className="checkmark" /></label><br />
-                                                        <label className="contain">Poster Design Competition<input type="checkbox"  name="Poster" checked={checked.Poster} onChange={handleChangecheck}/><span className="checkmark" /></label><br />
+                                                        <label className="contain">Graphic Design Competition<input type="checkbox"  name="Graphic_Designing_Competition" checked={checked.Graphic_Designing_Competition} onChange={handleChangecheck}/><span className="checkmark" /></label><br />
                                                         <label className="contain">Startup Competition<input type="checkbox" checked={checked.Startup} name="Startup" onChange={handleChangecheck} /><span className="checkmark" /></label>
                                                     </div>
                                                 </div>

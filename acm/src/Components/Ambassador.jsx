@@ -12,7 +12,7 @@ function Ambassador() {
 
   const [checked, setChecked] = useState({
     Hackathon: 0, Quiz: 0,
-    Poster: 0, Startup: 0
+    Poster: 0, Startup: 0,Graphic_Designing_Competition:0,WEB_DEVELOPMENT:0,APP_DEVELOPMENT:0
   });
   let name, value
   
@@ -37,13 +37,13 @@ function Ambassador() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { Name, Cnic, Address, University, Mobile, Email, Participants } = user;
-    const { Hackathon, Quiz, Poster, Startup } = checked;
+    const { Hackathon, Quiz, Poster, Startup,Graphic_Designing_Competition,WEB_DEVELOPMENT,APP_DEVELOPMENT } = checked;
     const res = await fetch("/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ Name, Cnic, Address, University, Mobile, Email, Participants,Hackathon, Quiz, Poster, Startup  }),
+      body: JSON.stringify({ Name, Cnic, Address, University, Mobile, Email, Participants,Hackathon, Quiz, Poster, Startup,Graphic_Designing_Competition,WEB_DEVELOPMENT,APP_DEVELOPMENT  }),
     });
 
     
@@ -174,6 +174,22 @@ function Ambassador() {
                           <label className="contain  ">Hackathon<input  type="checkbox"  name="Hackathon" checked={checked.Hackathon} onChange={handleChangecheck} /><span className="checkmark" /></label>
                         </div>
                       </div>
+                         <div className="row">
+                            <div className="col color" >
+                               <label className="contain " >Web Development<input type="checkbox"  name="WEB_DEVELOPMENT" checked={checked.WEB_DEVELOPMENT} onChange={handleChangecheck} /><span className="checkmark" /></label>
+                           </div>
+                                                    
+                      </div>
+                      
+                           <div className="row">
+                              <div className="col color" >
+                                  <label className="contain " >App Development<input type="checkbox"  name="APP_DEVELOPMENT" checked={checked.APP_DEVELOPMENT} onChange={handleChangecheck} /><span className="checkmark" /></label>
+                              </div>
+                                                    
+                           </div>
+
+                        
+                      
                     </div>
                     <div className="tab-pane fade" id="nav-other" role="tabpanel" aria-labelledby="nav-other-tab">
                       <div className="row">
