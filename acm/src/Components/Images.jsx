@@ -1,4 +1,4 @@
-import C1 from "../Assets/img/index/Techtalk.png"
+import C1 from "../Assets/img/index/Ramadan 2022.jpg"
 import C2 from "../Assets/img/index/ICPC.png";
 import C3 from "../Assets/img/index/carousel2.jpg"
 import C4 from "../Assets/img/index/INDUCTEES.png"
