@@ -10,6 +10,7 @@ import ReactLoading from 'react-loading';
 
 
 import ScrollToTop from './Components/ScrollToTopOnMount'
+const Developers_Cell =lazy(() => import('./Components/Developers_Cell'));
 const Home = lazy(() => import('./Components/Home'));
 const About = lazy(() => import('./Components/About'))
 const Member = lazy(() => import('./Components/Member'));
@@ -34,7 +35,8 @@ function App() {
          
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/team" component={Member}/>
+          <Route path="/team" component={Member} />
+          <Route path="/developer's_cell" component={Developers_Cell}/>
           <Route path="/softcom" component={Softcom} />
           <Route path="/gallery" component={GALLARY} /> 
        
@@ -45,7 +47,7 @@ function App() {
             <Route path="/icpc" component={ICPC} />
             </ParallaxProvider>
         </Switch>
-      <Footer/> 
+      {/* <Footer/>  */}
         </Suspense>
         </BrowserRouter>
         

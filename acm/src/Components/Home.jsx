@@ -28,18 +28,13 @@ function Home() {
           <meta name="description" content="ACM is a world wide professional organization devoted to advancing the theory and practice of computer science. Its student chapter at GIK is involved in activities ranging from arranging students workshops, special courses and introductory seminars to holding software and computer games competitions. "/>
 
         </Helmet>
-{/*         
-        <Carousel  infiniteLoop autoplay={true} interval={200} showThumbs={false} showIndicators={false} showStatus={false} > */}
+
                     <OwlCarousel  className="owl-theme" lazyLoad={1} autoplayHoverPause={1} items={1} loop autoplay={1} autoplayTimeout={3000} dots={1} height={"10"} >
-                    {/* <div style={{marginTop:"5%", width: '100%'}}  > */}
-                     {/* <LazyLoadImage  src={C4}/>
                    
-                   </div>       */}
-          {/* <div style={{marginTop:"5%",width: '100%', height: '10'}}  > */}
                      <img src={C1} className="Cimages" />
           <img  src={C3} className="Cimages"/>
           <img  src={C4} className="Cimages"  alt=""/>  
-                    {/* <img  src={C5} className="Cimages" alt="" /> */}
+                  
                                       
                     <img  src={C2} className="Cimages"/>
                    

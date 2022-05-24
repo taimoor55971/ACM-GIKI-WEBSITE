@@ -31,6 +31,9 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link id="animate" className="nav-link" to="/team">OUR TEAM</Link>
+              </li>
+               <li className="nav-item">
+              <Link id="animate" className="nav-link" to="/developer's_cell">Developer's Cell</Link>
             </li>
             <li className="nav-item">
               <Link id="animate" className="nav-link" to="/softcom">SOFTCOM</Link>
