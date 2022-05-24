@@ -47,7 +47,7 @@ function App() {
             <Route path="/icpc" component={ICPC} />
             </ParallaxProvider>
         </Switch>
-      {/* <Footer/>  */}
+      <Footer/> 
         </Suspense>
         </BrowserRouter>
         
