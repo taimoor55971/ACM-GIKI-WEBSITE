@@ -10,6 +10,7 @@ import ReactLoading from 'react-loading';
 
 
 import ScrollToTop from './Components/ScrollToTopOnMount'
+import Footer from './Components/Footer';
 const Developers_Cell =lazy(() => import('./Components/Developers_Cell'));
 const Home = lazy(() => import('./Components/Home'));
 const About = lazy(() => import('./Components/About'))
@@ -19,40 +20,43 @@ const ICPC = lazy(() => import('./Components/ICPC'));
 const GALLARY = lazy(() => import('./Components/Gallery'));
 const Participants = lazy(() => import('./Components/Participants'));
 const Ambassador = lazy(() => import('./Components/Ambassador'));
-const Footer = lazy(() => import('./Components/Footer'));
 function App() {
   return (
     <div>
       <BrowserRouter>
-      {/* <ReactLoading type="balls"  height={200} width={200} paddingTop={500}/> */}
-        <Suspense fallback={<ReactLoading className="loader" type="spinningBubbles"  height={50} width={50}  />}>
+        {/* <ReactLoading type="balls"  height={200} width={200} paddingTop={500}/> */}
         <Navbar />
-      
+        <Suspense
+          fallback={
+            <ReactLoading
+              className="loader"
+              type="spinningBubbles"
+              height={50}
+              width={50}
+            />
+          }
+        >
+          <ScrollToTop />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/team" component={Member} />
+            <Route path="/developer's_cell" component={Developers_Cell} />
+            <Route path="/softcom" component={Softcom} />
+            <Route path="/gallery" component={GALLARY} />
 
+            <Route path="/participant" component={Participants} />
+            <Route path="/ambassador" component={Ambassador} />
 
-         <ScrollToTop/>
-        <Switch>
-         
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/team" component={Member} />
-          <Route path="/developer's_cell" component={Developers_Cell}/>
-          <Route path="/softcom" component={Softcom} />
-          <Route path="/gallery" component={GALLARY} /> 
-       
-          <Route path="/participant" component={Participants} />
-          <Route path="/ambassador" component={Ambassador} />
-          
-          <ParallaxProvider>
-            <Route path="/icpc" component={ICPC} />
+            <ParallaxProvider>
+              <Route path="/icpc" component={ICPC} />
             </ParallaxProvider>
-        </Switch>
-      <Footer/> 
+          </Switch>
         </Suspense>
-        </BrowserRouter>
-        
+        <Footer />
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
 export default App
