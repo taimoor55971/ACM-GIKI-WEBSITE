@@ -30,7 +30,7 @@ function Navbar() {
               <Link id="animate" className="nav-link" to="/about">ABOUT ACM</Link>
             </li>
             <li className="nav-item">
-              <Link id="animate" className="nav-link" to="/team">OUR TEAM</Link>
+              <Link id="animate" className="nav-link" to="team">OUR TEAM</Link>
               </li>
                <li className="nav-item">
               <Link id="animate" className="nav-link" to="/developer's_cell">Developer's Cell</Link>

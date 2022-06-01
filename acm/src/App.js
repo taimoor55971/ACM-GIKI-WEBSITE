@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react'
 
 
 import Navbar from './Components/Navbar'
-import {  Switch, Route } from "react-router-dom"
+import {   Routes,Route } from "react-router-dom"
 import { BrowserRouter } from 'react-router-dom'
 
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -11,6 +11,7 @@ import ReactLoading from 'react-loading';
 
 import ScrollToTop from './Components/ScrollToTopOnMount'
 import Footer from './Components/Footer';
+import EC from './Components/EC';
 const Developers_Cell =lazy(() => import('./Components/Developers_Cell'));
 const Home = lazy(() => import('./Components/Home'));
 const About = lazy(() => import('./Components/About'))
@@ -20,6 +21,9 @@ const ICPC = lazy(() => import('./Components/ICPC'));
 const GALLARY = lazy(() => import('./Components/Gallery'));
 const Participants = lazy(() => import('./Components/Participants'));
 const Ambassador = lazy(() => import('./Components/Ambassador'));
+const Heads = lazy(() => import('./Components/Heads'));
+const SubHeads = lazy(() => import('./Components/Ambassador'));
+
 function App() {
   return (
     <div>
@@ -37,21 +41,22 @@ function App() {
           }
         >
           <ScrollToTop />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/team" component={Member} />
-            <Route path="/developer's_cell" component={Developers_Cell} />
-            <Route path="/softcom" component={Softcom} />
-            <Route path="/gallery" component={GALLARY} />
+          <Routes>
+            <Route exact path="/" element={<Home/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/team" element={<Member/>}/>
+             
+            <Route path="/developer's_cell" element={<Developers_Cell/>} />
+            <Route path="/softcom" element={<Softcom/>} />
+            <Route path="/gallery" element={<GALLARY/>} />
 
-            <Route path="/participant" component={Participants} />
-            <Route path="/ambassador" component={Ambassador} />
+            <Route path="/participant" element={<Participants/>} />
+            <Route path="/ambassador" element={<Ambassador/>} />
 
-            <ParallaxProvider>
-              <Route path="/icpc" component={ICPC} />
-            </ParallaxProvider>
-          </Switch>
+            {/* <ParallaxProvider>
+              <Route path="/icpc" element={ICPC} />
+            </ParallaxProvider> */}
+          </Routes>
         </Suspense>
         <Footer />
       </BrowserRouter>

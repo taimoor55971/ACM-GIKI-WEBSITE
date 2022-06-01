@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { useHistory } from "react-router-dom";
+import { useHistory,useNavigate } from "react-router-dom";
+
 import "../Assets/css/ambassador.css"
 import ScrollToTop from "react-scroll-to-top";
 function Ambassador() {
 
-  const history = useHistory();
+    let navigate = useNavigate();
 
   const [user, setUser] = useState({
     Name: '', Cnic: "", Address: "", University: "", Mobile: "", Email: "", Participants: "",
@@ -56,7 +57,7 @@ function Ambassador() {
     }
      if (res.status === 201 || res.status === 200) {
        alert("registeration successful");
-       history.push("/");
+       navigate("/");
         }
   };
 

@@ -1,12 +1,13 @@
 import React, { useState, } from 'react'
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../Assets/css/participants.css"
 import Button from 'react-bootstrap/Button';
 
 import ScrollToTop from "react-scroll-to-top";
 
 function Participants() {
-    const history =useHistory();
+      let navigate = useNavigate();
     const [user, setUser] = useState({
         Name: "", Cnic: "",Amb:"", University: "", Mobile: "", Email: "",
         NameL: "", CNICL: "", UniversityL: "", Tname: "", MobileL: "", EmailL: "",
@@ -55,7 +56,7 @@ function Participants() {
         }
         if (res.status === 201 || res.status === 200) {
             alert("registeration successful.CHECK YOUR EMAIL");
-            history.push("/");
+            navigate("/");
             // setUser({ ...user, [NameL]: "" })
         }
     }
@@ -83,7 +84,7 @@ function Participants() {
       window.alert("Successful registration");
         console.log("Successful registration");
         
-      history.push("/");
+      navigate("/");
     }
     }
     
