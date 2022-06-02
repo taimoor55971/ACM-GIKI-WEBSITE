@@ -11,7 +11,7 @@ import ReactLoading from 'react-loading';
 
 import ScrollToTop from './Components/ScrollToTopOnMount'
 import Footer from './Components/Footer';
-import EC from './Components/EC';
+
 const Developers_Cell =lazy(() => import('./Components/Developers_Cell'));
 const Home = lazy(() => import('./Components/Home'));
 const About = lazy(() => import('./Components/About'))
