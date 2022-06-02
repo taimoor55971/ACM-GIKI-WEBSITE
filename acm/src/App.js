@@ -21,8 +21,7 @@ const ICPC = lazy(() => import('./Components/ICPC'));
 const GALLARY = lazy(() => import('./Components/Gallery'));
 const Participants = lazy(() => import('./Components/Participants'));
 const Ambassador = lazy(() => import('./Components/Ambassador'));
-const Heads = lazy(() => import('./Components/Heads'));
-const SubHeads = lazy(() => import('./Components/Ambassador'));
+
 
 function App() {
   return (
@@ -53,9 +52,9 @@ function App() {
             <Route path="/participant" element={<Participants/>} />
             <Route path="/ambassador" element={<Ambassador/>} />
 
-            {/* <ParallaxProvider>
+            {/* {/* <ParallaxProvider> */}
               <Route path="/icpc" element={ICPC} />
-            </ParallaxProvider> */}
+            {/* // </ParallaxProvider> */} 
           </Routes>
         </Suspense>
         <Footer />
