@@ -1,26 +1,26 @@
 import React, { lazy, Suspense } from 'react'
 
 
-import Navbar from './Components/Navbar'
-import {   Routes,Route } from "react-router-dom"
+import Navbar from './Components/Header and Footer/Navbar'
+import { Route, Switch } from "react-router-dom"
 import { BrowserRouter } from 'react-router-dom'
-
+import "./App.css"
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ReactLoading from 'react-loading';
 
 
 import ScrollToTop from './Components/ScrollToTopOnMount'
-import Footer from './Components/Footer';
+import Footer from './Components/Header and Footer/Footer';
 
 const Developers_Cell =lazy(() => import('./Components/Developers_Cell'));
-const Home = lazy(() => import('./Components/Home'));
-const About = lazy(() => import('./Components/About'))
-const Member = lazy(() => import('./Components/Member'));
-const Softcom = lazy(() => import('./Components/Softcom'));
-const ICPC = lazy(() => import('./Components/ICPC'));
-const GALLARY = lazy(() => import('./Components/Gallery'));
-const Participants = lazy(() => import('./Components/Participants'));
-const Ambassador = lazy(() => import('./Components/Ambassador'));
+const Home = lazy(() => import('./Components/Home/Home'));
+const About = lazy(() => import('./Components/About/About'))
+const Member = lazy(() => import('./Components/Team/Member'));
+const Softcom = lazy(() => import('./Components/Softcom/Softcom'));
+const ICPC = lazy(() => import('./Components/ICPC/ICPC'));
+const GALLARY = lazy(() => import('./Components/Gallery/Gallery'));
+const Participants = lazy(() => import('./Components/Forms/Participants'));
+const Ambassador = lazy(() => import('./Components/Forms/Ambassador'));
 
 
 function App() {
@@ -40,22 +40,21 @@ function App() {
           }
         >
           <ScrollToTop />
-          <Routes>
-            <Route exact path="/" element={<Home/>} />
-            <Route path="/about" element={<About/>} />
-            <Route path="/team" element={<Member/>}/>
-             
-            <Route path="/developer's_cell" element={<Developers_Cell/>} />
-            <Route path="/softcom" element={<Softcom/>} />
-            <Route path="/gallery" element={<GALLARY/>} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/team" component={Member} />
 
-            <Route path="/participant" element={<Participants/>} />
-            <Route path="/ambassador" element={<Ambassador/>} />
+            <Route path="/developer's_cell" component={Developers_Cell} />
+            <Route path="/softcom" component={Softcom} />
+            <Route path="/gallery" component={GALLARY} />
 
-            {/* {/* <ParallaxProvider> */}
-              <Route path="/icpc" element={ICPC} />
-            {/* // </ParallaxProvider> */} 
-          </Routes>
+            <Route path="/participant" component={Participants} />
+            <Route path="/ambassador" component={Ambassador} />
+            <ParallaxProvider>
+              <Route path="/icpc" component={ICPC} />
+            </ParallaxProvider>
+          </Switch>
         </Suspense>
         <Footer />
       </BrowserRouter>

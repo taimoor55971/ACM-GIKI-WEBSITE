@@ -1,7 +1,7 @@
 import React from 'react'
-import "../Assets/css/App.css"
+
 import { Link } from 'react-router-dom'
-import {acmlogonav} from "./Images"
+import {acmlogonav} from "../Images"
 
 
 function Navbar() {

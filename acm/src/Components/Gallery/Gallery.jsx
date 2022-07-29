@@ -2,7 +2,7 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import 'react-medium-image-zoom/dist/styles.css'
 import Zoom from 'react-medium-image-zoom'
-import "../Assets/css/gallery.css"
+import "./gallery.css"
 import { Helmet } from "react-helmet";
 import ScrollToTop from "react-scroll-to-top";
 

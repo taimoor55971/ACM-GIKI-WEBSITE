@@ -5,7 +5,7 @@
 import React, { useEffect, useState } from "react";
 
 import { Helmet } from "react-helmet";
-import "../Assets/css/team.css"
+import "./team.css"
 import { useLayoutEffect } from "react";
 
 const renderData = (items, e) => {

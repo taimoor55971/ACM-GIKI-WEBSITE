@@ -1,13 +1,13 @@
 import React from 'react'
-import "../Assets/css/App.css"
-import "../Assets/css/sponsor.css"
+
+import "./sponsor.css"
 import { Link } from "react-router-dom"
 
 import 'aos/dist/aos.css';
 import {
   C1, C2, C3,C4,
-  Dost, genlTeam, granna, hum, ibm, kualitatem, lptp, mic, poster, social, tag, topcity, toyota, uworlx, microsoft, virtualforce, pseb,LiasonPackage, C5
-} from "./Images"
+  Dost, genlTeam, granna, hum, ibm, kualitatem, lptp, mic, poster, social, tag, topcity, toyota, uworlx, microsoft, virtualforce, pseb,LiasonPackage,
+} from "../Images"
 import OwlCarousel from "react-owl-carousel";
 
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -29,18 +29,16 @@ function Home() {
 
         </Helmet>
 
-                    <OwlCarousel  className="owl-theme" lazyLoad={1} autoplayHoverPause={1} items={1} loop autoplay={1} autoplayTimeout={3000} dots={1} height={"10"} >
+          <OwlCarousel  className="owl-theme" lazyLoad={1} autoplayHoverPause={1} items={1} loop autoplay={1} autoplayTimeout={3000} dots={1} height={"10"} >
                    
-                     <img src={C1} className="Cimages" />
-          <img  src={C3} className="Cimages"/>
-          <img  src={C4} className="Cimages"  alt=""/>  
-                  
-                                      
-                    <img  src={C2} className="Cimages"/>
+                     <img src={C1} className="Cimages" alt="" />
+                      <img  src={C3} className="Cimages" alt=""/>
+                      <img  src={C4} className="Cimages"  alt="" />                                                     
+                      <img  src={C2} className="Cimages" alt=""/>
                    
                     
                 
-          {/* </Carousel> */}
+         
           </OwlCarousel>
             
         <br />

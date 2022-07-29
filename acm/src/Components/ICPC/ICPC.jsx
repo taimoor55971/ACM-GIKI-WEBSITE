@@ -1,9 +1,9 @@
 import React from 'react'
-import { Account, background, Logo } from './Images'
+import { Account, background, Logo } from '../Images'
 import { Link } from "react-router-dom"
-import "../Assets/css/icpc.css"
+import "./icpc.css"
 import { Parallax } from 'react-scroll-parallax';
-import "../Assets/css/App.css"
+
 import { Helmet } from 'react-helmet';
 import ScrollToTop from "react-scroll-to-top";
 function ICPC() {

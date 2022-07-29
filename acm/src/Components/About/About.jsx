@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import '../Assets/css/about.css'
+import './about.css'
 import ScrollToTop from "react-scroll-to-top";
 
 function About() {

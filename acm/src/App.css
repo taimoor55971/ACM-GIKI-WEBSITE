@@ -120,13 +120,13 @@ body {
 }
 
 .carousel-control-next-icon {
-  background-image: url(../../Assets/img/index/right.png) !important;
+  /* background-image: url(../../Assets/img/index/right.png) !important; */
   height: 8% !important;
   width: 30% !important;
 }
 
 .carousel-control-prev-icon {
-  background-image: url(../../Assets/img/index/left.png) !important;
+  /* background-image: url(../../Assets/img/index/left.png) !important; */
   height: 8% !important;
   width: 30% !important;
 }

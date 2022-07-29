@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "../Assets/css/sponsor.css"
+import "./sponsor.css"
 
 function Sponsor({image}) {
     return (

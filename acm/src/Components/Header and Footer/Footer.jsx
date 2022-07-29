@@ -1,8 +1,8 @@
 import React from 'react'
-import { logo2 } from './Images'
+import { logo2 } from '../Images'
 //import { FaFacebook,FaInstagram } from 'react-icons/fa';
 //import { FcGoogle } from "react-icons/fc";
-import "../Assets/css/footer.css"
+import "./footer.css"
 import { SocialIcon } from 'react-social-icons';
 import { Helmet } from 'react-helmet';
 function Footer() {

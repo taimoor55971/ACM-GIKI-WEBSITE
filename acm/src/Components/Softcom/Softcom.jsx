@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import "../Assets/css/softcom.css"
-import { hack, icpc, posterDes, quiz, softcom, startup } from './Images'
+import "./softcom.css"
+import { hack, icpc, posterDes, quiz, softcom, startup } from '../Images'
 import ScrollToTop from "react-scroll-to-top";
 
 function Softcom() {
