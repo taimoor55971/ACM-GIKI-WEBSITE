@@ -62,9 +62,11 @@ const request = mailjet
      <h3>Dear ${Name}!</h3> 
      You have successfuly registered as a ambasssador for 20th  Softcom.
               For Details Contact:
-                      Liaison Head: Awais Sajjad (0331-3153332)
-                      Liaison Head: Obail Tariq (0333-4424450)
+                      Event Co-ordinator Softcom: Uzair Nadeem (0301-2295959)
+                      Liaison Head: Syed Ashhar Shah(0307-0790244)
                       System Administrator: Muhammad Taimoor Khan (0332-2236519)
+                      
+                      
               Regards:
               ACM Giki Chapter
     </pre> `
@@ -126,9 +128,11 @@ router.post("/registerps", (req, res) => {
      <h3>Dear ${Name}!</h3> 
      You have successfuly registered as a participant for 20nd Softcom.
               For Details Contact:
-                      Liaison Head: Awais Sajjad (0331-3153332)
-                      Liaison Head: Obail Tariq (0333-4424450)
+                      Event Co-ordinator Softcom: Uzair Nadeem (0301-2295959)
+                      Liaison Head: Syed Ashhar Shah(0307-0790244)
                       System Administrator: Muhammad Taimoor Khan (0332-2236519)
+                      
+                      
               Regards:
               ACM Giki Chapter
     </pre>`
@@ -181,8 +185,8 @@ router.post("/registerpi", (req, res) => {
      <h3>Dear ${NameL}!</h3> <br/>
      Your Team have successfuly registered as a participant for ICPC.
                 For Details Contact:
-                      Liaison Head: Awais Sajjad (0331-3153332)
-                      Liaison Head: Obail Tariq (0333-4424450)
+                      Event Co-ordinator ICPC : Mohammed Saad Khan(0312-7660910)
+                      Liaison Head: Syed Ashhar Shah(0307-0790244)
                       System Administrator: Muhammad Taimoor Khan (0332-2236519)
               Regards:
               ACM Giki Chapter

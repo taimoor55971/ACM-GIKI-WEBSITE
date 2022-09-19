@@ -44,11 +44,11 @@ function Footer() {
                 </p>
                 <br /><br />
                 <i style={{display: 'inline'}} className="fa fa-phone" />
-                <p style={{display: 'inline'}} className="date1">(+92) 331-2856736</p>
+                <p style={{display: 'inline'}} className="date1">(+92) 335-4458038</p>
                 <br /><br />
                 <i style={{display: 'inline'}} className="fa fa-phone" />
                 <p style={{display: 'inline'}} id="mail" className="date1">
-                  (+92) 336-6711377
+                  (+92) 304-4912258
                 </p>
                 <br /><br />
                 

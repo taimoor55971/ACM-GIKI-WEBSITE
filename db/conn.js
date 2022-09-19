@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
-dotenv.config({ path: "../backend/config.env" });
+dotenv.config({ path: "config.env" });
 // config.envC:\Users\hp\OneDrive\Desktop\ACM maga Project\backend\config.env
 const uri = process.env.MONGODB_URI;
 mongoose.connect( uri, {
