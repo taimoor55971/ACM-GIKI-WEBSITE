@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 import 'aos/dist/aos.css';
 import {
-  C1, C2, C3,C4,
+  C1, C2, C3,
   Dost, genlTeam, granna, hum, ibm, kualitatem, lptp, mic, poster, social, tag, topcity, toyota, uworlx, microsoft, virtualforce, pseb,LiasonPackage,
 } from "../Images"
 import OwlCarousel from "react-owl-carousel";
@@ -33,7 +33,7 @@ function Home() {
                    
                      <img src={C1} className="Cimages" alt="" />
                       <img  src={C3} className="Cimages" alt=""/>
-                      <img  src={C4} className="Cimages"  alt="" />                                                     
+                      {/* <img  src={C4} className="Cimages"  alt="" />                                                      */}
                       <img  src={C2} className="Cimages" alt=""/>
                    
                     

@@ -53,8 +53,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "fsevents": "^2.3.2"
   }
 }

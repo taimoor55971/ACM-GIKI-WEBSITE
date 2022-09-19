@@ -1,8 +1,9 @@
-import C1 from "../Assets/img/index/Ramadan 2022.jpg"
+import C1 from "../Assets/img/index/acm workshop fixed.png"
 import C2 from "../Assets/img/index/ICPC.png";
-import C3 from "../Assets/img/index/carousel2.jpg"
-import C4 from "../Assets/img/index/INDUCTEES.png"
-import C5 from "../Assets/img/index/Prelim Winners.jpg"
+import C3 from "../Assets/img/index/Ramadan 2022.jpg"
+// import C3 from "../Assets/img/index/carousel2.jpg"
+// import C4 from "../Assets/img/index/INDUCTEES.png"
+// import C5 from "../Assets/img/index/Prelim Winners.jpg"
 // import C5 from "../Assets/img/index/Poster_workshop.jpg"
 
 
@@ -67,7 +68,7 @@ import icpc from "../Assets/img/softcom/icpc.jpg"
 
 
 export {
-    C1, C2, C3,C4,C5, lptp, tag, mic, poster, social, granna, ibm, hum, toyota, Dost, uworlx, topcity, sapien, microsoft,
+    C1, C2, C3, lptp, tag, mic, poster, social, granna, ibm, hum, toyota, Dost, uworlx, topcity, sapien, microsoft,
     kualitatem,virtualforce,genlTeam,logo2,pseb,di,acmlogonav,
     P,SA, VP, ECS, ECI, GS, DS, DP, DL, DT, Tresurer, head1, head2, head3, head4, head5, head6, head7, head8,
     Logo, Account, Ticket, background,LiasonPackage,softcom,hack,quiz,startup,posterDes,icpc
