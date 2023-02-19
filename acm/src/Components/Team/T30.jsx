@@ -1,5 +1,4 @@
 
-/* eslint-disable no-unused-vars */
 
 
 import React, { useEffect, useState } from "react";
@@ -13,13 +12,7 @@ const renderData = (items, e) => {
   return (
     
     <div className="container gallery">
-         <Helmet >
-          <meta charSet="utf-8" />
-          <title>ACM_GIKI Chapter|Gallery</title>
-        <meta name="description" content="ACM GIKI Gallery Page" />
-        <meta name="viewport" content="width=device-width,  initial-scale=1.0 ,user-scalable=no"></meta>
-
-        </Helmet>
+    
       <div className="row m-2">
         {items.map((items) => {
           return (
@@ -48,8 +41,7 @@ function T30({API}) {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
 
-  // eslint-disable-next-line no-unused-vars
-  useLayoutEffect(() => {
+  useEffect(() => {
     fetch(API)
       .then((response) => response.json())
       .then((json) => setData(json));

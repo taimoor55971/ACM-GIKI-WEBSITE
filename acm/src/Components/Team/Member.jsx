@@ -1,11 +1,13 @@
 
-import React from 'react'
+import { React, lazy } from 'react'
 
 
 import "./team.css"
 import { Helmet } from 'react-helmet'
-import T30 from "./T30"
+
 import ScrollToTop from "react-scroll-to-top";
+// const T30=lazy(()=>import("./T30"))
+import T30 from './T30'
 
 
 
@@ -39,7 +41,7 @@ function Member() {
                   href="#nav-EC"
                   role="tab"
                   aria-controls="nav-EC"
-                  aria-selected="true"
+                  aria-selected="false"
                 >
                   EXECUTIVE COUNCIL
                 </a>
@@ -94,6 +96,8 @@ function Member() {
                     id="mem-row"
                   >
                     <T30 API={"/members29"} />
+                    
+
                   </div>
                 </div>
               </div>

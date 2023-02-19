@@ -11,11 +11,12 @@ import ReactLoading from 'react-loading';
 
 import ScrollToTop from './Components/ScrollToTopOnMount'
 import Footer from './Components/Header and Footer/Footer';
+// const Member = lazy(() => import('./Components/Team/Member'));
+import Member from "./Components/Team/Member"
 
 const Developers_Cell =lazy(() => import('./Components/Developers_Cell'));
 const Home = lazy(() => import('./Components/Home/Home'));
 const About = lazy(() => import('./Components/About/About'))
-const Member = lazy(() => import('./Components/Team/Member'));
 const Softcom = lazy(() => import('./Components/Softcom/Softcom'));
 const ICPC = lazy(() => import('./Components/ICPC/ICPC'));
 const GALLARY = lazy(() => import('./Components/Gallery/Gallery'));
