@@ -8,7 +8,7 @@ const path = require("path");
 const cors=require("cors")
 // 
 
-app.use(cors)
+app.use(cors())
 
 
 app.use(require("./Router/auth"));
