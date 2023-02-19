@@ -39,7 +39,7 @@ function Ambassador() {
     e.preventDefault();
     const { Name, Cnic, Address, University, Mobile, Email, Participants } = user;
     const { Hackathon, Quiz, Poster, Startup,Graphic_Designing_Competition,WEB_DEVELOPMENT,APP_DEVELOPMENT } = checked;
-    const res = await fetch("/register", {
+    const res = await fetch("https://acm-giki-webapp.onrender.com/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

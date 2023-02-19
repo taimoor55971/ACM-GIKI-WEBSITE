@@ -87,7 +87,7 @@ function Gallery() {
   const loadMessage = async () => {
     try {
       SetLoading(true);
-      fetch("/images")
+      fetch("https://acm-giki-webapp.onrender.com/images")
       .then((response) => response.json())
       .then((json) => setData(json));
       SetLoading(false);

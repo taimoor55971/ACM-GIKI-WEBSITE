@@ -95,7 +95,7 @@ function Member() {
                     style={{ height: "100%", width: "100%" }}
                     id="mem-row"
                   >
-                    <T30 API={"/members29"} />
+                    <T30 API={"https://acm-giki-webapp.onrender.com/members29"} />
                     
 
                   </div>
@@ -110,7 +110,7 @@ function Member() {
                 <div className="container">
                   <h2 style={{ textAlign: "center" }}>BATCH 30</h2>
                   <div className="row justify-content-md-center" id="mem-row">
-                    <T30 API={"/members"} />
+                    <T30 API={"https://acm-giki-webapp.onrender.com/members"} />
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@ function Member() {
                 <div className="container">
                   <h2 style={{ textAlign: "center" }}>BATCH 31</h2>
                   <div className="row justify-content-md-center" id="mem-row">
-                    <T30 API={"/members31"} />
+                    <T30 API={"https://acm-giki-webapp.onrender.com/members31"} />
                   </div>
                 </div>
               </div>
@@ -138,7 +138,7 @@ function Member() {
                 <div className="container">
                   <h2 style={{ textAlign: "center" }}>BATCH 32</h2>
                   <div className="row justify-content-md-center" id="mem-row">
-                    <T30 API={"/members31"} />
+                    <T30 API={"https://acm-giki-webapp.onrender.com/members31"} />
                   </div>
                 </div>
               </div>

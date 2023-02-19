@@ -37,7 +37,7 @@ function Participants() {
     e.preventDefault();
         const { Name, Cnic, Amb, University, Mobile, Email } = user;
          const { Hackathon, Quiz, Poster, Startup,Graphic_Designing_Competition,WEB_DEVELOPMENT,APP_DEVELOPMENT } = checked;
-    const res = await fetch("/registerps", {
+    const res = await fetch("https://acm-giki-webapp.onrender.com/registerps", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
