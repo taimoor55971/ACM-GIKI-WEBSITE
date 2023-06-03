@@ -1,6 +1,6 @@
 .row {
     text-align: center;
-    color: aliceblue;
+    color: none;
 }
 
 .col {
@@ -17,7 +17,9 @@
     text-align: justify;
     font-family: 'Raleway', sans-serif;
 }
-
+.nav-link::selection{
+    background-color: none;
+}
 .lead-sp {
     font-size: 1rem !important;
     font-family: 'Raleway', sans-serif;
