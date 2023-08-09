@@ -37,7 +37,7 @@ function Member() {
               <div className="container">
                 <h2 className="text-center">EC</h2>
                 <div className="row justify-content-center" id="mem-row">
-                  <T30 API={"/members29"} />
+                  <T30 API={"https://acm-giki-webapp.onrender.com/members29"} />
                 </div>
               </div>
             </div>
@@ -45,7 +45,7 @@ function Member() {
               <div className="container">
                 <h2 className="text-center">HEADS</h2>
                 <div className="row justify-content-center" id="heads-row">
-                  <T30 API={"/members"} />
+                  <T30 API={"https://acm-giki-webapp.onrender.com/members"} />
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ function Member() {
               <div className="container">
                 <h2 className="text-center">SUBHEADS</h2>
                 <div className="row justify-content-center" id="subheads-row">
-                  <T30 API={"/members31"} />
+                  <T30 API={"https://acm-giki-webapp.onrender.com/members31"} />
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@ function Member() {
               <div className="container">
                 <h2 className="text-center">MEMBERS</h2>
                 <div className="row justify-content-center" id="members-row">
-                  <T30 API={"/members32"} />
+                  <T30 API={"https://acm-giki-webapp.onrender.com/members32"} />
                 </div>
               </div>
             </div>
