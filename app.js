@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
 }
 const date=new Date();
 
-app.listen(PORT, (req, res) => {
+app.listen(PORT, () => {
     console.log(`listing to port ${PORT}`);
     
 
